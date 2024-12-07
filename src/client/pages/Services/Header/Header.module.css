@@ -1,0 +1,115 @@
+.header {
+    width: 100%;
+    height: 100%;
+    padding: 120px 100px;
+    background-image: url("../../../assets//images//serivrPage.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 160px;
+  }
+  
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding-top: 80px;
+  }
+  
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .mainHeading {
+    width: 857px;
+    color: #f8f8f8;
+    font-size: 60px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    line-height: 72px;
+  }
+  
+  .subHeading {
+    width: 750px;
+    color: #fefefe;
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+  }
+  
+  .ctaContainer {
+    padding: 12px;
+    border-radius: 30px;
+    border: 1px solid #dcdcdc;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .bookCallButton {
+    padding: 8px 16px;
+    background: #f26622;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .consultationText {
+    text-align: center;
+    color: #f8f8f8;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  
+  /* Mobile Styles */
+ /* Mobile Styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .contentContainer {
+    gap: 20px;
+  }
+
+  .mainHeading {
+    font-size: 32px;
+    line-height: 40px;
+    width: 100%;
+  }
+
+  .subHeading {
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+  }
+
+  .ctaContainer {
+    flex-direction: column;
+    gap: 8px;
+    align-items: stretch;
+  }
+
+  .bookCallButton {
+    width: 100%;
+  }
+
+  .consultationText {
+    display: none; /* Hide this text on mobile screens */
+  }
+}

@@ -1,0 +1,182 @@
+.reactAdsSession {
+    width: 100%;
+    padding: 140px 100px;
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    gap: 166px;
+  }
+  
+  .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 96px;
+  }
+  
+  .image {
+    width: 400px;
+    height: 320px;
+    border-radius: 8px;
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+  }
+  
+  .contentHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .tag {
+    padding: 8px 16px;
+    background: white;
+    border: 1.5px solid #dcdcdc;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 12px;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    width: fit-content;
+  }
+  
+  .title {
+    color: #292929;
+    font-size: 32px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  
+  .description {
+    color: #525252;
+    font-size: 18px;
+    font-family: Inter, sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .readMore {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid #f26622;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    color: #292929;
+    cursor: pointer;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .readMore:hover {
+    background: #f26622;
+    color: white;
+  }
+  
+  .arrowIcon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    color: #525252;
+  }
+  
+  .checkIcon {
+    width: 24px;
+    height: 24px;
+  }
+  @media (max-width: 768px) {
+    .reactAdsSession {
+      padding: 80px 16px; /* Adjust padding for smaller screens */
+      gap: 40px; /* Adjust gap between sections */
+    }
+  
+  
+    .image {
+        order: 2; /* Ensure the image comes after the write-up */
+        width: 100%; /* Make the image responsive */
+        max-width: 320px; /* Restrict maximum width */
+        height: auto; /* Maintain aspect ratio */
+        margin: 0 auto; /* Center image */
+      }
+    
+  
+    .section {
+        flex-direction: column; /* Stack content vertically */
+        gap: 40px; /* Maintain spacing between stacked elements */
+      }
+    
+      .content {
+        order: 1; /* Ensure the write-up comes first */
+        text-align: center;
+        align-items: center;
+      }
+    .contentHeader {
+      gap: 12px; /* Reduce gap between tag and title */
+    }
+  
+    .tag {
+      padding: 6px 12px; /* Reduce padding */
+      font-size: 10px; /* Smaller font size for mobile */
+      line-height: 16px;
+    }
+  
+    .title {
+      font-size: 24px; /* Smaller font size for mobile */
+      line-height: 32px;
+    }
+  
+    .description {
+      font-size: 14px; /* Adjust font size for mobile */
+      line-height: 20px; /* Adjust line height */
+    }
+  
+    .readMore {
+      gap: 8px; /* Adjust gap for readability */
+      font-size: 14px; /* Adjust font size */
+    }
+  
+    .arrowIcon {
+      width: 12px; /* Adjust size for mobile */
+      height: 12px;
+    }
+  
+    .features {
+      align-items: center; /* Center the features */
+      gap: 12px; /* Adjust gap for spacing */
+    }
+  
+    .feature {
+      gap: 8px; /* Adjust gap between icon and text */
+      font-size: 14px; /* Adjust font size */
+    }
+  
+    .checkIcon {
+      width: 16px; /* Smaller icon size for mobile */
+      height: 16px;
+    }
+  }
+  

@@ -1,0 +1,126 @@
+.container {
+  width: 100%;
+  padding: 80px 20px; /* Adjust padding for smaller screens */
+  background: #f8f8f8;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.textWrapper {
+  max-width: 100%; /* Allow text to use full width on smaller screens */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 28px; /* Adjust font size for smaller screens */
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  line-height: 36px;
+  color: #292929;
+}
+
+.highlight {
+  background: #f26622;
+  color: #fff;
+  padding: 0 8px;
+  border-radius: 4px;
+}
+
+.description {
+  font-size: 14px; /* Adjust font size for smaller screens */
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 22px;
+  color: #525252;
+}
+
+.getInTouchButton {
+  padding: 10px 20px; /* Adjust button size for smaller screens */
+  border-radius: 30px;
+  border: 2px solid #f26622;
+  background: transparent;
+  color: #f26622;
+  font-size: 14px; /* Adjust font size */
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  line-height: 22px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.getInTouchButton:hover {
+  background: #f26622;
+  color: #fff;
+}
+
+.dottedBackground {
+  position: absolute;
+  width: 80px; /* Adjust size for smaller screens */
+  height: 80px;
+  bottom: 5%; /* Adjust position for smaller screens */
+  left: 5%;
+  background-image: radial-gradient(circle, #d2d6db 1px, transparent 1px);
+  background-size: 8px 8px; /* Adjust spacing for smaller screens */
+}
+
+.dottedBackgroundTopRight {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 10%;
+  right: 5%;
+  background-image: radial-gradient(circle, #d2d6db 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 60px 16px; /* Further reduce padding */
+  }
+
+  .content {
+    gap: 20px; /* Reduce spacing between elements */
+  }
+
+  .title {
+    font-size: 24px; /* Further reduce title size */
+    line-height: 32px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .getInTouchButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .dottedBackground {
+    width: 60px; /* Smaller size for background */
+    height: 60px;
+    bottom: 10%;
+    left: 10%;
+  }
+
+  .dottedBackgroundTopRight {
+    width: 60px; /* Adjust size for mobile */
+    height: 60px;
+    top: 5%;
+    right: 10%; /* Adjust position for mobile */
+  }
+}

@@ -1,0 +1,110 @@
+.container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 50px 20px !important;
+  }
+  
+  
+  .header {
+    width: 100%;
+    max-width: 920px;
+    text-align: center;
+  }
+  
+  .mainTitle {
+    font-size: 40px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    line-height: 48px;
+    color: #292929;
+  }
+  
+  .subTitle {
+    font-size: 18px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 26px;
+    color: #525252;
+  }
+  
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 112px; /* Maintain gap for desktop */
+    width: 100%;
+    max-width: 920px;
+  }
+  
+  .feature {
+    width: 200px; /* Keep feature width for desktop */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 38px;
+  }
+  .iconWrapper {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #efefef;
+    border-radius: 50%;
+    background: white;
+    padding: 12px;
+  }
+  
+  .icon {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+  }
+  
+  
+.featureText {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: #525252;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .features {
+    display: grid; /* Use grid for better control */
+    grid-template-columns: repeat(2, 1fr); /* 2 features per row */
+    gap: 24px; /* Adjust gap for mobile */
+    width: 100%;
+  }
+  .mainTitle {
+    font-size: 24px;
+    font-weight: '600';
+  }
+  .subTitle {
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+  .feature {
+    width: auto; /* Allow feature to adjust its width */
+    gap: 16px; /* Adjust gap between icon and text */
+  }
+
+  .iconWrapper {
+    width: 50px; /* Adjust icon size */
+    height: 50px;
+    padding: 8px; /* Adjust padding */
+  }
+
+  .icon {
+    width: 28px; /* Adjust icon size */
+    height: 28px;
+  }
+
+  .featureText {
+    font-size: 14px; /* Adjust text size */
+  }
+}

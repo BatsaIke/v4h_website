@@ -1,0 +1,174 @@
+.blogContent {
+    width: 100%;
+    padding: 0px 60px 20px; /* Compact padding */
+    background: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px; /* Gap between filter and grid */
+    box-sizing: border-box;
+  }
+  
+  /* Filter Bar Styles */
+  .filterBar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px; /* Reduced gap between filters */
+    justify-content: center;
+  }
+  
+  .filter {
+    padding: 8px 16px;
+    background: #efefef;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 500;
+    color: #292929;
+    cursor: pointer;
+  }
+  
+  /* Article Grid Styles */
+  .articleGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns */
+    gap: 16px; /* Reduced spacing between grid items */
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .article {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  /* Fixed height for all images */
+  .imageContainer {
+    position: relative;
+    height: 360px; /* Same height for all rows */
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  /* Alternating Widths with Overlap */
+  .article:nth-child(4n+1) .imageContainer,
+  .article:nth-child(4n+4) .imageContainer {
+    width: calc(150% - 30px); /* Larger width, overlapping */
+    z-index: 1; /* Bring forward */
+    margin-right: -100px; /* Overlap to fill gap */
+  }
+  
+  .article:nth-child(4n+2) .imageContainer,
+  .article:nth-child(4n+3) .imageContainer {
+    width: calc(150% - 100px); /* Smaller width */
+    margin-left: -30px; /* Align to overlap backward */
+    z-index: 0;
+  }
+  
+  /* Ensure proper alignment for smaller images */
+  .article:nth-child(4n+2) .imageContainer,
+  .article:nth-child(4n+4) .imageContainer {
+    margin-left: auto; /* Align smaller image to the right */
+  }
+  
+  .articleImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .imageOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  }
+  
+  .articleText {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    color: #f8f8f8;
+  }
+  
+  .articleText h3 {
+    font-size: 22px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    margin: 0 0 6px;
+  }
+  
+  .articleText p {
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+  }
+  
+  /* Load More Button */
+  .loadMore {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .loadMore button {
+    padding: 8px 16px;
+    border-radius: 30px;
+    border: 1px solid #f26622;
+    background: transparent;
+    color: #292929;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .loadMore button:hover {
+    background: #f26622;
+    color: #fff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .blogContent {
+      padding: 40px 20px 60px; /* Adjusted padding for smaller screens */
+    }
+  
+    .filterBar {
+      gap: 10px; /* Reduced gap between filters */
+    }
+  
+    .filter {
+      font-size: 14px;
+    }
+  
+    .articleGrid {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  
+    .imageContainer {
+      height: 240px; /* Adjusted height for smaller screens */
+      width: 100%; /* Full width on smaller screens */
+      margin: 0; /* No overlap on smaller screens */
+    }
+  
+    .articleText h3 {
+      font-size: 18px;
+    }
+  
+    .articleText p {
+      font-size: 14px;
+    }
+  
+    .loadMore button {
+      font-size: 14px;
+    }
+  }
+  

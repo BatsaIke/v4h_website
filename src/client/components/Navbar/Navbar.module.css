@@ -1,0 +1,89 @@
+.navbarWrapper {
+  position: sticky; /* Position the navbar absolutely */
+  top: 15px; /* Align it to the top */
+  width: 100%; /* Full width for centering the navbar */
+  display: flex;
+  justify-content: center; /* Centers the navbar horizontally */
+  z-index: 1000;
+}
+
+
+.navbar {
+  position: absolute; /* Sticky positioning */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset to the center */
+  z-index: 1000; /* Ensure it's on top of other elements */
+  align-items: center;
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent white background */
+  border: 0.5px solid #dcdcdc;
+  border-radius: 36px;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  padding: 24px;
+  width: 1240px; /* Adjust to your desired width */
+  backdrop-filter: blur(24px); /* Add the blur effect */
+}
+
+
+
+.logoLink {
+  text-decoration: none;
+}
+
+.logo {
+  height: 29px;
+  width: 64px;
+  object-fit: cover;
+}
+
+.navbarLinks {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.navLink {
+  font-size: 18px;
+  font-weight: 500;
+  color: #292929;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #f26622;
+}
+
+.button {
+  background-color: #f26622;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #e2541c;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 100%; /* Full width for mobile */
+    border-radius: 0; /* Remove border radius on mobile */
+    padding: 8px 16px; /* Reduce padding for a compact view */
+  }
+
+  .navbarLinks {
+    display: none; /* Hide desktop links on mobile */
+  }
+
+  .button {
+    display: none; /* Hide the desktop button on mobile */
+  }
+}

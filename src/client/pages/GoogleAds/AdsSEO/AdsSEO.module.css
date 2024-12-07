@@ -1,0 +1,93 @@
+.adsSEO {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 130px;
+  background: url('../../../assets/images/adsSeobackground.png') ; /* Using the imported background image */
+  padding: 92px 20px;
+  box-sizing: border-box;
+}
+
+.heading {
+  max-width: 1050px;
+  text-align: center;
+  color: #292929;
+  font-size: 32px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  line-height: 40px;
+  word-wrap: break-word;
+}
+
+.servicesContainer {
+  display: flex;
+  gap: 48px;
+  width: 100%;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  justify-content: center; /* Centers the content */
+}
+
+.service {
+  display: flex;
+  flex: 1 1 45%; /* Each service takes up half width on larger screens */
+  gap: 24px;
+  align-items: flex-start;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  background: #f26622;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  overflow: hidden;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.description {
+  flex: 1;
+  color: #525252;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  line-height: 26px;
+  word-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  .adsSEO {
+    gap: 60px;
+  }
+
+  .heading {
+    font-size: 24px;
+    line-height: 32px;
+    padding: 0 10px;
+  }
+
+  .servicesContainer {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .service {
+    flex: 1 1 100%; /* Each service takes full width on mobile */
+    gap: 16px;
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

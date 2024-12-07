@@ -1,0 +1,106 @@
+.bookACall {
+    width: 100%;
+    padding: 102px 71px;
+    background: url('../../../assets/images/bookAcall.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+    color: #f8f8f8; /* Ensures text is visible over the image */
+  }
+  
+  .heading {
+    max-width: 930px;
+    text-align: center;
+    font-size: 40px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    line-height: 48px;
+  }
+  
+  .callToAction {
+    width: 324px;
+    padding: 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Slight transparency for better contrast */
+  }
+  
+  .bookButton {
+    padding: 8px 16px;
+    background: #f26622;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bookButton span {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  
+  .freeConsultation {
+    padding: 0 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .freeConsultation span {
+    text-align: center;
+    color: #f8f8f8;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  @media (max-width: 768px) {
+    .bookACall {
+      padding: 50px 20px; /* Adjust padding for smaller screens */
+      gap: 20px; /* Reduce the gap between elements */
+      text-align: center; /* Center-align text and elements */
+    }
+  
+    .heading {
+      font-size: 24px; /* Adjust font size for readability */
+      line-height: 32px; /* Adjust line height */
+      max-width: 100%; /* Ensure the heading fits within the screen */
+    }
+  
+    .callToAction {
+      flex-direction: column; /* Stack button and free consultation vertically */
+      width: 100%; /* Make it span full width */
+      gap: 16px; /* Add spacing between stacked elements */
+      background-color: rgba(0, 0, 0, 0.7); /* Increase contrast for better visibility */
+      padding: 16px; /* Add padding to make it look balanced */
+    }
+  
+    .bookButton {
+      width: 100%; /* Make the button span full width */
+      padding: 12px; /* Add more padding for larger touch targets */
+    }
+  
+    .bookButton span {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      line-height: 20px;
+    }
+  
+    .freeConsultation {
+      width: 100%; /* Center align and stretch */
+    }
+  
+    .freeConsultation span {
+      font-size: 14px; /* Adjust font size */
+      line-height: 20px;
+    }
+  }
+  

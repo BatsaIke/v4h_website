@@ -1,0 +1,145 @@
+.dedicatedSection {
+  width: 100%;
+  background: #180a03;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.verticalBarsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1180px;
+  align-items: center;
+}
+
+.verticalBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.line {
+  width: 1px;
+  height: 156px;
+  background: #525252;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background: transparent;
+  border: 1px solid #525252;
+  border-radius: 50%;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  top: -370px; /* Adjusted position for your layout */
+}
+
+.horizontalBar {
+  width: 104%;
+  max-width: 1180px;
+  height: 1px;
+  background-color: #525252;
+}
+
+.description {
+  width: 1077px;
+  text-align: center;
+  color: #f8f8f8;
+  font-size: 40px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  line-height: 48px;
+  position: relative;
+}
+
+.arc {
+  margin-top: 8px;
+  width: 300px; /* Adjust arc width */
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .dedicatedSection {
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .arc {
+    display: none;
+  }
+  .verticalBarsContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Maintain the original width */
+    max-width: 1180px; /* Ensure the lines stay in place */
+    align-items: center; /* Keep alignment consistent */
+  }
+
+  .verticalBar {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Do not change line positions */
+  }
+
+  /* Shorten the first two and last two lines */
+  .verticalBar .line:nth-child(1),
+  .verticalBar .line:nth-child(5){
+    height: 40px; /* Shortened height for the first and last two lines */
+  }
+
+  .line {
+    width: 1px; 
+    height: 106px; /* Retain original height for other lines */
+    background: #525252;
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #525252; /* Keep original size */
+    border-radius: 50%;
+  }
+
+  .contentWrapper {
+    position: absolute;
+    gap: 12px;
+    align-items: center; /* Center-align the content */
+    top: 1490px;
+  }
+
+  .horizontalBar {
+    width: 80%; /* Adjust width for smaller screens */
+  }
+
+  .description {
+    font-size: 32px; /* Adjusted for smaller screens */
+    line-height: 26px;
+    text-align: center; /* Center-align text on mobile */
+    width: 90%; /* Restrict width */
+  }
+
+  .roasContainer {
+    padding: 6px 12px;
+    border-radius: 20px;
+  }
+
+  .roasText {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+
