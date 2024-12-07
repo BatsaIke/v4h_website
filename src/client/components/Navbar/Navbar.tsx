@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { NavHashLink as Link } from "react-router-hash-link";
-import styles from "./NavBar.module.css";
+import styles from "./Navbar.module.css";
 import v4hypeLogo from "../../assets/images/v4hypelogo.png";
 import MobileNav from "./MobileNav";
 
