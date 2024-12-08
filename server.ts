@@ -34,8 +34,7 @@ async function createServer() {
     try {
       const url = req.originalUrl;
 
-      const baseTemplatePath = isProd
-        ? path.resolve("./client/index.html")
+      const baseTemplatePath = path.resolve("./client/index.html"); // Always use this path
 
       const template = isProd
         ? await fs.readFile(baseTemplatePath, "utf-8")
