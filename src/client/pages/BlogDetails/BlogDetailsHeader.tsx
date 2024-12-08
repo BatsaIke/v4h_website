@@ -1,5 +1,5 @@
-import React from 'react';
-import styles from './BlogDetailsHeader.module.css';
+import React from "react";
+import styles from "./BlogDetailsHeader.module.css";
 
 interface BlogDetailsHeaderProps {
   title: string;
@@ -11,7 +11,7 @@ const BlogDetailsHeader: React.FC<BlogDetailsHeaderProps> = ({ title, subtitle, 
   return (
     <div
       className={styles.headerContainer}
-      style={{ backgroundImage: `url(${backgroundImage})` }} // Dynamically set background
+      style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div className={styles.overlay} />
       <div className={styles.headerContent}>

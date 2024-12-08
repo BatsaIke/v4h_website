@@ -8,6 +8,25 @@
     gap: 80px; /* Gap between filter and grid */
     box-sizing: border-box;
   }
+
+  .filter {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .filter:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .activeFilter {
+    background-color: #f26622;
+    color: white;
+    font-weight: bold;
+  }
+  
   
   /* Filter Bar Styles */
   .filterBar {

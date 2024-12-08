@@ -1,45 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./BlogContent.module.css";
-import blogImage1 from "./images/blogimage.jpg";
-import blogImage2 from "./images/blogimagge2.jpg";
-import blogImage3 from "./images/blogimagge3.jpg";
-import blogImage4 from "./images/blogimagge4.jpg";
-import blogImage5 from "./images/blogimagge5.jpg";
-import blogImage6 from "./images/blogimagge6.jpg";
-import blogImage7 from "./images/blogimagge7.jpg";
-import blogImage8 from "./images/blogimagge8.jpg";
+import { blogArticles } from "../BlogData"; // Import blog data
 
 const BlogContent: React.FC = () => {
   const navigate = useNavigate();
+  const [selectedCategory, setSelectedCategory] = useState<string>("All articles");
 
-  const articles = [
-    { id: "1", title: "Top 5 Tendințe în Marketing Digital pentru 2024", date: "16 February 2024", image: blogImage1 },
-    { id: "2", title: "Inteligența artificială în business", date: "16 February 2024", image: blogImage2 },
-    { id: "3", title: "Automatizarea marketingului", date: "16 February 2024", image: blogImage3 },
-    { id: "4", title: "Migrarea în cloud: Avantaje și riscuri pentru afacerea ta", date: "16 February 2024", image: blogImage4 },
-    { id: "5", title: "Oportunități și provocări pentru afaceri", date: "16 February 2024", image: blogImage5 },
-    { id: "6", title: "Strategii pentru marketing video de succes", date: "16 February 2024", image: blogImage6 },
-    { id: "7", title: "Impactul sustenabilității în branding", date: "16 February 2024", image: blogImage7 },
-    { id: "8", title: "Tehnologii emergente în marketing digital", date: "16 February 2024", image: blogImage8 },
+  // Extract unique categories dynamically
+  const categories = [
+    "All articles",
+    ...new Set(blogArticles.map((article) => article.category)),
   ];
+
+  // Filter articles based on selected category
+  const filteredArticles =
+    selectedCategory === "All articles"
+      ? blogArticles
+      : blogArticles.filter((article) => article.category === selectedCategory);
 
   return (
     <div className={styles.blogContent}>
       {/* Category Filter */}
       <div className={styles.filterBar}>
-        {["All articles", "Case Studies", "Business", "PPC", "SEO"].map(
-          (category) => (
-            <div key={category} className={styles.filter}>
-              {category}
-            </div>
-          )
-        )}
+        {categories.map((category) => (
+          <div
+            key={category}
+            className={`${styles.filter} ${
+              selectedCategory === category ? styles.activeFilter : ""
+            }`}
+            onClick={() => setSelectedCategory(category)}
+          >
+            {category}
+          </div>
+        ))}
       </div>
 
       {/* Article Grid */}
       <div className={styles.articleGrid}>
-        {articles.map((article) => (
+        {filteredArticles.map((article) => (
           <div
             key={article.id}
             className={styles.article}
