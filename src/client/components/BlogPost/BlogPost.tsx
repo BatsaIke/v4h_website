@@ -1,46 +1,36 @@
 import React from "react";
 import styles from "./BlogPost.module.css";
-import blog1 from "../../assets/images/blog1.jpg";
-import blog2 from "../../assets/images/blog2.jpg";
-import blog3 from "../../assets/images/blog3.jpg";
 import { Link } from "react-router-dom";
+import { blogArticles } from "../../pages/Blogs/BlogData"; // Import blog data
 
 const BlogPost: React.FC = () => {
+  const featuredBlogs = blogArticles.slice(0, 3); // Get the first 3 blogs
+
   return (
     <div className={styles.blogPost}>
       {/* Blog Cards */}
       <div className={styles.blogCards}>
-        <div className={styles.card}>
-          <img src={blog1} alt="Automatizarea marketingului" className={styles.cardImage} />
-          <div className={styles.cardOverlay}>
-            <h3 className={styles.cardTitle}>Automatizarea marketingului</h3>
-            <span className={styles.cardDate}>16 February 2024</span>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <img src={blog2} alt="Inteligența artificială în business" className={styles.cardImage} />
-          <div className={styles.cardOverlay}>
-            <h3 className={styles.cardTitle}>Inteligența artificială în business</h3>
-            <span className={styles.cardDate}>16 February 2024</span>
-          </div>
-        </div>
-        <div className={styles.card}>
-          <img src={blog3} alt="Oportunități și provocări pentru afaceri" className={styles.cardImage} />
-          <div className={styles.cardOverlay}>
-            <h3 className={styles.cardTitle}>Oportunități și provocări pentru afaceri</h3>
-            <span className={styles.cardDate}>16 February 2024</span>
-          </div>
-        </div>
+        {featuredBlogs.map((blog) => (
+          <Link to={`/blogs/${blog.id}`} key={blog.id} className={styles.cardLink}>
+            <div className={styles.card}>
+              <img src={blog.image} alt={blog.title} className={styles.cardImage} />
+              <div className={styles.cardOverlay}>
+                <h3 className={styles.cardTitle}>{blog.title}</h3>
+                <span className={styles.cardDate}>{blog.date}</span>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
       {/* See All Blog Posts Button */}
       <div className={styles.seeAll}>
-  <Link to="/blogs" className={styles.seeAllLink}>
-    <span>See All Blog Posts</span>
-    <div className={styles.arrowContainer}>
-      <div className={styles.arrow}></div>
-    </div>
-  </Link>
-</div>
+        <Link to="/blogs" className={styles.seeAllLink}>
+          <span>See All Blog Posts</span>
+          <div className={styles.arrowContainer}>
+            <div className={styles.arrow}></div>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };
