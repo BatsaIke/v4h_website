@@ -84,16 +84,22 @@
   }
 
   .imageContainer {
-    display: flex;
-    flex-direction: row; /* Align icons horizontally */
-    justify-content: space-between; /* Spread them evenly */
+    flex-direction: row; /* Icons in a single row */
+    justify-content: space-evenly; /* Even spacing across the container */
     align-items: flex-end; /* Align icons at the base */
-    width: 100%; /* Take full width on mobile */
-    gap: 16px;
+    padding: 0; /* Remove extra padding */
+    gap: 16px; /* Smaller gap for mobile */
   }
 
   .icon {
     width: 60px; /* Adjusted size for smaller screens */
     height: auto;
+  }
+  .iconTick {
+    width: 60px; /* Reduced size for TikTok icon on mobile */
+    height: auto; /* Maintain aspect ratio */
+    position: relative;
+    bottom: -10px;
+
   }
 }
