@@ -36,7 +36,6 @@ async function createServer() {
 
       const baseTemplatePath = isProd
         ? path.resolve("./client/index.html")
-        : path.resolve("index.html");
 
       const template = isProd
         ? await fs.readFile(baseTemplatePath, "utf-8")
