@@ -1,105 +1,99 @@
 .otherPPC {
-    width: 100%;
-    background: #f8f8f8;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding: 40px 60px; /* Added extra left and right padding */
-    box-sizing: border-box;
-    gap: 40px;
+  width: 100%;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px;
+  box-sizing: border-box;
+  gap: 40px;
 }
 
-  
-  .textContainer {
-    flex: 1;
-    max-width: 50%;
-  }
-  
-  .heading {
-    color: #292929;
-    font-size: 32px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-    line-height: 40px;
-    margin-bottom: 16px;
-  }
-  
-  .subtext {
-    color: #525252;
-    font-size: 18px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    line-height: 26px;
-  }
-  
-  .imageContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 32px;
-  }
-  
-  .imageWrapper {
-    display: flex;
+.textContainer {
+  flex: 1;
+  max-width: 50%;
+}
+
+.heading {
+  color: #292929;
+  font-size: 32px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.subtext {
+  color: #525252;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon {
+  width: 100px;
+  height: auto;
+}
+
+.label {
+  margin-top: 8px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  color: #292929;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .otherPPC {
     flex-direction: column;
     align-items: center;
+    padding: 20px; /* Reduced padding for smaller screens */
+    gap: 16px; /* Adjusted spacing for smaller screens */
+  }
+
+  .textContainer {
+    max-width: 100%; /* Utilize full width on smaller screens */
     text-align: center;
   }
-  
-  .icon {
-    width: 100px;
-    height: auto;
-    position: relative;
-    right: 100px;
-  }
- 
 
-  .label {
-    margin-top: 8px;
-    font-size: 16px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    color: #292929;
+  .heading {
+    font-size: 20px; /* Smaller font size for mobile */
+    line-height: 30px;
   }
-  @media (max-width: 768px) {
-    .otherPPC {
-      flex-direction: column;
-      align-items: center;
-      padding: 100px 20px;
-      gap: 22px;
-    }
-  
-    .textContainer {
-      width: 100%;
-      text-align: center;
-    }
-  
-    .heading {
-      font-size: 24px;
-      line-height: 28px;
-      margin-bottom: 16px;
-      color: #292929;
-    }
-  
-    .subtext {
-      font-size: 16px;
-      line-height: 24px;
-      color: #525252;
-    }
-  
-    .imageContainer {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-evenly; /* Distribute icons evenly */
-      align-items: flex-end; /* Align icons to the bottom */
-      width: 100%; /* Full width for container */
-      gap: 16px; /* Optional, for added spacing between icons */
-    }
-  
-    .icon {
-      width: 80px;
-      height: auto;
-    }
+
+  .subtext {
+    font-size: 14px; /* Smaller font size for mobile */
+    line-height: 20px;
   }
-  
+
+  .imageContainer {
+    display: flex;
+    flex-direction: row; /* Align icons horizontally */
+    justify-content: space-between; /* Spread them evenly */
+    align-items: flex-end; /* Align icons at the base */
+    width: 100%; /* Take full width on mobile */
+    gap: 16px;
+  }
+
+  .icon {
+    width: 60px; /* Adjusted size for smaller screens */
+    height: auto;
+  }
+}

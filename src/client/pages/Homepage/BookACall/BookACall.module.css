@@ -95,7 +95,7 @@
     }
   
     .freeConsultation {
-      width: 100%; /* Center align and stretch */
+      display: none;
     }
   
     .freeConsultation span {
