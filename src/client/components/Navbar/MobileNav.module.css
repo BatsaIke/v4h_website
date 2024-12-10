@@ -36,7 +36,7 @@
   top: 0;
   right: -100%; /* Hidden initially (off-screen to the right) */
   width: 80%;
-  height: 50%; /* Adjusted to full height for Figma match */
+  height: 80%; /* Adjusted to full height for Figma match */
   background: #f8f8f8;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1); /* Shadow for sliding menu */
   display: flex;
