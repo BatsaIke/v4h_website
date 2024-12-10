@@ -3,10 +3,14 @@ import styles from "./Footer.module.css";
 import logo from "../../assets/images/v4hypelogo.png"; // Replace with the correct logo path
 import facebookIcon from "../../assets/images/ri_facebook-fill.png";
 import instagramIcon from "../../assets/images/ri_linkedin-fill.png";
-import linkedinIcon from "../../assets/images/ri_whatsapp-fill.png";
-import Copyright from "../Copyright/Copyright";
+import linkedinIcon from "../../assets/images/ri_linkedin-fill.png";
+import { Book_A_Call } from "../../utils/constants"; // Centralized link
 
 const Footer: React.FC = () => {
+  const handleBookACall = () => {
+    window.open(Book_A_Call, "_blank");
+  };
+
   return (
     <footer className={styles.footer}>
       <div className={styles.leftSection}>
@@ -16,16 +20,23 @@ const Footer: React.FC = () => {
           <p className={styles.contactSubheading}>
             Tell us a few words about your project
           </p>
-          <button className={styles.getInTouchButton}>Get in touch</button>
+          <button className={styles.getInTouchButton} onClick={handleBookACall}>
+            Get in touch
+          </button>
         </div>
         <div className={styles.socialIcons}>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.facebook.com/viral4hype"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={facebookIcon} alt="Facebook" className={styles.icon} />
           </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-            <img src={instagramIcon} alt="Instagram" className={styles.icon} />
-          </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.linkedin.com/company/viral4hype/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={linkedinIcon} alt="LinkedIn" className={styles.icon} />
           </a>
         </div>
@@ -81,8 +92,8 @@ const Footer: React.FC = () => {
           <h4 className={styles.columnHeading}>CONTACT</h4>
           <ul className={styles.columnList}>
             <li>
-              <a href="mailto:contact@viral4hype" className={styles.link}>
-                contact@viral4hype
+              <a href="mailto:contact@viral4hype.com" className={styles.link}>
+                contact@viral4hype.com
               </a>
             </li>
             <li>
@@ -99,9 +110,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
       </div>
-     
     </footer>
-    
   );
 };
 

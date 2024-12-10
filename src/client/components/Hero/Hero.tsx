@@ -5,7 +5,7 @@ import { Book_A_Call } from "../../utils/constants";
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState("");
-  const fullText = "Digital Growth and React Development";
+  const fullText = "Diigital Growth and React Development";
 
   useEffect(() => {
     let index = 0;
@@ -17,9 +17,10 @@ const Hero: React.FC = () => {
         clearInterval(interval); // Stop when finished
       }
     }, 100); // Adjust speed
-
+  
     return () => clearInterval(interval); // Cleanup
-  }, [fullText]);
+  }, []);
+  
 
   const splitText = displayText.split(" and "); // Split "Digital Growth" and "React Development"
 

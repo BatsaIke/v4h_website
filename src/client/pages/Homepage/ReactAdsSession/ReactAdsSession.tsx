@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./ReactAdsSession.module.css";
 import googleads from "../../../assets/images/googleads.jpg";
 import googleads2 from "../../../assets/images/googleads2.jpg";
 import arrorup from "../../../assets/images/solar_arrow-right-up-linear.png";
 import checkIcon from "../../../assets/images/prime_check-circle.png";
+import { Book_A_Call } from "../../../utils/constants"; // Centralized link
 
 const ReactAdsSession: React.FC = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleGetInTouch = () => {
+    window.open(Book_A_Call, "_blank");
+  };
+
   return (
     <div className={styles.reactAdsSession}>
       {/* First section */}
@@ -28,9 +44,18 @@ const ReactAdsSession: React.FC = () => {
             SEO, PPC, and Social Media are all interconnected and should work
             towards the same goal: producing value.
           </p>
-          <div className={styles.readMore}>
-            <span>Read more about our digital marketing services</span>
-            <img src={arrorup} alt="Arrow Up" className={styles.arrowIcon} />
+          <div
+            className={styles.readMore}
+            onClick={isMobile ? handleGetInTouch : undefined}
+          >
+            {isMobile ? (
+              <span>Get in touch</span>
+            ) : (
+              <span>Read more about our digital marketing services</span>
+            )}
+            {!isMobile && (
+              <img src={arrorup} alt="Arrow Up" className={styles.arrowIcon} />
+            )}
           </div>
         </div>
       </div>
@@ -73,9 +98,18 @@ const ReactAdsSession: React.FC = () => {
               </span>
             </div>
           </div>
-          <div className={styles.readMore}>
-            <span>Read more about our digital marketing services</span>
-            <img src={arrorup} alt="Arrow Up" className={styles.arrowIcon} />
+          <div
+            className={styles.readMore}
+            onClick={isMobile ? handleGetInTouch : undefined}
+          >
+            {isMobile ? (
+              <span>Get in touch</span>
+            ) : (
+              <span>Read more about our digital marketing services</span>
+            )}
+            {!isMobile && (
+              <img src={arrorup} alt="Arrow Up" className={styles.arrowIcon} />
+            )}
           </div>
         </div>
         <img

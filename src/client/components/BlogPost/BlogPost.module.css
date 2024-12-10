@@ -130,14 +130,15 @@
       font-size: 12px; /* Reduce font size for smaller screens */
     }
   
-    .seeAll {
+    .seeAllLink {
       width: 100%; /* Make the button full width */
-      justify-content: center; /* Center-align button text */
+      justify-content: center; /* Center-align content, including the span */
       padding: 12px 16px; /* Add padding for better touch targets */
     }
   
-    .seeAll span {
+    .seeAllLink span {
       font-size: 14px; /* Adjust font size for mobile */
+      text-align: center; /* Ensure text alignment in the span */
     }
   
     .arrowContainer {
