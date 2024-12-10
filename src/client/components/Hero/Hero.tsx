@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
   const splitText = displayText.split(" and "); // Split "Digital Growth" and "React Development"
 
   const handleBookCall = () => {
-    window.open(Book_A_Call, "_blank");
+    window.open(Book_A_Call, "_blank"); 
   };
 
   const handleFreeConsultation = () => {
