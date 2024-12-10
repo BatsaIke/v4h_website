@@ -8,6 +8,9 @@ const BlogPost: React.FC = () => {
 
   return (
     <div className={styles.blogPost}>
+      {/* Latest Blog Title */}
+      <div className={styles.blogTitle}>Latest Blog</div>
+
       {/* Blog Cards */}
       <div className={styles.blogCards}>
         {featuredBlogs.map((blog) => (
@@ -22,6 +25,7 @@ const BlogPost: React.FC = () => {
           </Link>
         ))}
       </div>
+
       {/* See All Blog Posts Button */}
       <div className={styles.seeAll}>
         <Link to="/blogs" className={styles.seeAllLink}>

@@ -1,148 +1,172 @@
 .blogPost {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 70px;
-    padding: 100px 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  padding: 100px 50px;
+}
+
+.blogTitle {
+  color: #292929;
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  line-height: 28px;
+  word-wrap: break-word;
+}
+
+.blogCards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  width: 380px;
+  height: 380px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cardImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.cardTitle {
+  color: #fefefe;
+  font-size: 24px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.cardDate {
+  color: #fefefe;
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+}
+
+.seeAllLink {
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 42px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.seeAll:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.seeAll span {
+  color: black;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.arrowContainer {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  width: 8px;
+  height: 8px;
+  border: 2px solid black;
+  border-width: 2px 2px 0 0;
+  transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+  .blogPost {
+    padding: 20px 20px;
+    gap: 40px;
   }
-  
-  .blogCards {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .card {
-    width: 380px;
-    height: 380px;
-    position: relative;
-    border-radius: 20px;
-    overflow: hidden;
-  }
-  
-  .cardImage {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .cardOverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; /* Make the overlay cover the entire card */
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-    display: flex; /* Center text vertically and horizontally */
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 20px;
-    box-sizing: border-box;
-    border-radius: 20px;
-  }
-  
-  .cardTitle {
-    color: #fefefe;
+
+  .blogTitle {
     font-size: 24px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
-    margin-bottom: 8px;
+    text-align: left;
+    margin-bottom: 16px;
+
+font-Weight: '500';
+line-Height: 28px;
   }
-  
+
+  .blogCards {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .card {
+    width: 335px;
+    max-width: 335px;
+    height: 251px;
+    border-radius: 16px;
+  }
+
+  .cardOverlay {
+    padding: 16px;
+  }
+
+  .cardTitle {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
   .cardDate {
-    color: #fefefe;
-    font-size: 14px;
-    font-family: "IBM Plex Sans", sans-serif;
-    font-weight: 600;
+    font-size: 12px;
   }
+
   
   .seeAllLink {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 16px;
+    border: 1px solid #F26622;
+    width:335px;
     padding: 8px 16px;
-    border: 1px solid black;
-    border-radius: 42px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none; /* Removes underline for links */
+    margin-top: 70px;
+    margin-bottom: 70px;
 
   }
-  
-  .seeAll:hover {
-    background: rgba(0, 0, 0, 0.1);
+
+  .seeAllLink span {
+    font-size: 14px;
+    text-align: center;
   }
-  
-  .seeAll span {
-    color: black;
-    font-size: 16px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    line-height: 24px;
-  }
-  
+
   .arrowContainer {
-    width: 24px;
-    height: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
   }
-  
-  .arrow {
-    width: 8px;
-    height: 8px;
-    border: 2px solid black;
-    border-width: 2px 2px 0 0;
-    transform: rotate(45deg);
-  }
-  @media (max-width: 768px) {
-    .blogPost {
-      padding: 20px 20px; /* Adjust padding for smaller screens */
-      gap: 40px; /* Reduce the gap between elements */
-    }
-  
-    .blogCards {
-      flex-direction: column; /* Stack blog cards vertically */
-      gap: 20px; /* Add spacing between stacked cards */
-      align-items: center; /* Center-align the cards */
-    }
-  
-    .card {
-      width: 100%; /* Make the card take full width */
-      max-width: 335px; /* Restrict the maximum width */
-      height: auto; /* Adjust height automatically */
-      border-radius: 16px; /* Slightly smaller border radius for mobile */
-    }
-  
-    .cardOverlay {
-      padding: 16px; /* Reduce padding for smaller cards */
-    }
-  
-    .cardTitle {
-      font-size: 20px; /* Adjust font size for mobile */
-      line-height: 28px;
-    }
-  
-    .cardDate {
-      font-size: 12px; /* Reduce font size for smaller screens */
-    }
-  
-    .seeAllLink {
-      width: 100%; /* Make the button full width */
-      justify-content: center; /* Center-align content, including the span */
-      padding: 12px 16px; /* Add padding for better touch targets */
-    }
-  
-    .seeAllLink span {
-      font-size: 14px; /* Adjust font size for mobile */
-      text-align: center; /* Ensure text alignment in the span */
-    }
-  
-    .arrowContainer {
-      display: none; /* Hide arrow icon for simplicity on mobile */
-    }
-  }
-  
+}

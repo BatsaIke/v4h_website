@@ -65,42 +65,13 @@
   }
   @media (max-width: 768px) {
     .bookACall {
+      display: none;
       padding: 50px 20px; /* Adjust padding for smaller screens */
       gap: 20px; /* Reduce the gap between elements */
       text-align: center; /* Center-align text and elements */
     }
   
-    .heading {
-      font-size: 24px; /* Adjust font size for readability */
-      line-height: 32px; /* Adjust line height */
-      max-width: 100%; /* Ensure the heading fits within the screen */
-    }
+    
   
-    .callToAction {
-      flex-direction: column; /* Stack button and free consultation vertically */
-      width: 100%; /* Make it span full width */
-      gap: 16px; /* Add spacing between stacked elements */
-      background-color: rgba(0, 0, 0, 0.7); /* Increase contrast for better visibility */
-      padding: 16px; /* Add padding to make it look balanced */
-    }
-  
-    .bookButton {
-      width: 100%; /* Make the button span full width */
-      padding: 12px; /* Add more padding for larger touch targets */
-    }
-  
-    .bookButton span {
-      font-size: 14px; /* Adjust font size for smaller screens */
-      line-height: 20px;
-    }
-  
-    .freeConsultation {
-      display: none;
-    }
-  
-    .freeConsultation span {
-      font-size: 14px; /* Adjust font size */
-      line-height: 20px;
-    }
   }
   

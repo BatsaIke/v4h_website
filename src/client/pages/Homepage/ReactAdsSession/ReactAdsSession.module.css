@@ -108,80 +108,132 @@
     width: 24px;
     height: 24px;
   }
-  @media (max-width: 768px) {
-    .reactAdsSession {
-      padding: 80px 16px; /* Adjust padding for smaller screens */
-      gap: 40px; /* Adjust gap between sections */
-    }
-  
-  
-    .image {
-        order: 2; /* Ensure the image comes after the write-up */
-        width: 100%; /* Make the image responsive */
-        max-width: 320px; /* Restrict maximum width */
-        height: auto; /* Maintain aspect ratio */
-        margin: 0 auto; /* Center image */
-      }
-    
-  
-    .section {
-        flex-direction: column; /* Stack content vertically */
-        gap: 40px; /* Maintain spacing between stacked elements */
-      }
-    
-      .content {
-        order: 1; /* Ensure the write-up comes first */
-        text-align: center;
-        align-items: center;
-      }
-    .contentHeader {
-      gap: 12px; /* Reduce gap between tag and title */
-    }
-  
-    .tag {
-      padding: 6px 12px; /* Reduce padding */
-      font-size: 10px; /* Smaller font size for mobile */
-      line-height: 16px;
-    }
-  
-    .title {
-      font-size: 24px; /* Smaller font size for mobile */
-      line-height: 32px;
-      text-align: left;
-    }
-  
-    .description {
-      font-size: 14px; /* Adjust font size for mobile */
-      line-height: 20px;
-      text-align: left;
-    }
-  
-    .readMore {
-      gap: 8px; /* Adjust gap for readability */
-      font-size: 14px; /* Adjust font size */
-    }
-  
-    .arrowIcon {
-      width: 12px; /* Adjust size for mobile */
-      height: 12px;
-    }
-  
-    .features {
-      align-items: center; /* Center the features */
-      gap: 12px; /* Adjust gap for spacing */
-    }
-  
-    .feature {
-      gap: 8px; /* Adjust gap between icon and text */
-      font-size: 14px; /* Adjust font size */
-    }
-    span{
-      text-align: left;
-    }
-  
-    .checkIcon {
-      width: 16px; /* Smaller icon size for mobile */
-      height: 16px;
-    }
+ @media (max-width: 768px) {
+  .reactAdsSession {
+    padding: 60px 16px; /* Slightly reduce padding */
+    gap: 24px; /* Adjust gap between sections */
+    background: #f8f8f8; /* Ensure consistent background color */
   }
-  
+
+  .section {
+    flex-direction: column; /* Stack sections vertically */
+    gap: 24px; /* Maintain spacing between sections */
+  }
+
+  .image {
+    order: 2; 
+    width: 100%; 
+    max-width: 335px; 
+    height: 335px; 
+    margin: 0 auto; 
+    border-radius: 8px; 
+  }
+
+  .content {
+    order: 1; /* Ensure content comes first */
+    text-align: left; /* Align text to the left */
+    align-items: flex-start; /* Align content to the left */
+  }
+
+  .contentHeader {
+    gap: 8px; /* Reduce gap between the tag and title */
+  }
+
+  .tag {
+    padding: 6px 12px; /* Reduce padding */
+    font-size: 12px; /* Smaller font size for tag */
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.20);
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-top: 128px;
+  }
+
+  .title {
+    font-size: 32px; /* Adjusted for mobile */
+    line-height: 28px; /* Maintain readability */
+    text-align: left; /* Align title to the left */
+    color:#292929;
+    font-family: "DM Sans", sans-serif;
+line-height: 40px;
+    font-weight: 600;
+  }
+
+  .description {
+    font-size: 16px; /* Smaller font size for mobile */
+    line-height: 20px;
+    text-align: left; 
+    color: #525252;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Inter', sans-serif;
+
+  }
+
+  .readMore {
+    gap: 8px; /* Adjust gap for readability */
+    font-size: 14px; /* Adjust font size */
+    padding: 8px 16px; /* Smaller padding */
+    border-radius: 24px; 
+    color: #292929;
+    font-family: "DM Sans", sans-serif;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+
+
+  }
+
+  .arrowIcon {
+    width: 12px; /* Adjust size for smaller screens */
+    height: 12px;
+  }
+
+  .features {
+    align-items: flex-start; /* Align features to the left */
+    gap: 8px; /* Adjust gap for readability */
+  }
+
+  .feature {
+    gap: 8px; /* Maintain gap between icon and text */
+    font-size: 14px; /* Adjust font size for mobile */
+    text-align: left; /* Align feature text to the left */
+  }
+
+  .checkIcon {
+    width: 16px; /* Adjust size for mobile */
+    height: 16px;
+  }
+
+  .callToAction {
+    flex-direction: row; /* Align buttons horizontally */
+    justify-content: center; /* Center buttons */
+    gap: 16px; /* Maintain spacing between buttons */
+    width: 100%; /* Ensure full-width alignment */
+    padding: 0;
+  }
+
+  .bookCall {
+    width: 100%; /* Full-width button */
+    padding: 12px; /* Adjust padding for touch targets */
+    background: #f26622; /* Retain primary button color */
+    border-radius: 24px; /* Rounded button for better UX */
+  }
+
+  .freeConsultation {
+    display: none; /* Hide this button for mobile */
+  }
+ span{
+  color: #525252;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family:"DM Sans", sans-serif;
+
+ }
+}
