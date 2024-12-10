@@ -36,8 +36,7 @@
   top: 0;
   right: -100%; /* Hidden initially (off-screen to the right) */
   width: 80%;
-  /* max-width: 300px; */
-  height: 50%;
+  height: 50%; /* Adjusted to full height for Figma match */
   background: #f8f8f8;
   box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1); /* Shadow for sliding menu */
   display: flex;
@@ -53,9 +52,10 @@
 
 /* Menu Content */
 .menuContent {
+  padding-top: 50px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px;
 }
 
 .menuItem {
@@ -74,7 +74,7 @@
 
 /* Get in Touch Button */
 .getInTouchButton {
-  padding: 8px 16px;
+  padding: 12px 24px;
   background: #f26622;
   border-radius: 30px;
   color: white;
@@ -84,6 +84,7 @@
   text-align: center;
   cursor: pointer;
   margin-top: 20px;
+  width: fit-content;
   transition: background 0.3s ease;
 }
 

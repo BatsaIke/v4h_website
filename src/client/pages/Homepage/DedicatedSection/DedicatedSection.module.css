@@ -114,15 +114,16 @@
     gap: 10px; /* Do not change line positions */
   }
 
+  
   /* Shorten the first two and last two lines */
   .verticalBar .line:nth-child(1),
   .verticalBar .line:nth-child(5){
-    height: 40px; /* Shortened height for the first and last two lines */
+    height: 60px; /* Shortened height for the first and last two lines */
   }
 
   .line {
     width: 1px; 
-    height: 106px; /* Retain original height for other lines */
+    height: 336px; /* Retain original height for other lines */
     background: #525252;
   }
 
@@ -137,7 +138,8 @@
     position: relative;
     gap: 12px;
     align-items: center; /* Center-align the content */
-    top: -240px;
+    top: -480px;
+    overflow: hidden;
   }
 
   .horizontalBar {
@@ -145,10 +147,10 @@
   }
 
   .description {
-    font-size: 18px; /* Adjusted for smaller screens */
-    line-height: 26px;
+    font-size: 32px; /* Adjusted for smaller screens */
+    line-height: 40px;
     text-align: center; /* Center-align text on mobile */
-    width: 90%; /* Restrict width */
+    width:320px
   }
 
   .roasContainer {

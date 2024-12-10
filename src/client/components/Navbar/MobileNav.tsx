@@ -4,6 +4,7 @@ import styles from "./MobileNav.module.css";
 import logo from "../../assets/images/v4hypelogo.png";
 import menuIcon from "../../assets/images/ci_menu-alt-01.png";
 import closeIcon from "../../assets/images/close.png";
+import { Book_A_Call } from "../../utils/constants"; // Import the centralized link
 
 const MobileNav: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,6 +17,12 @@ const MobileNav: React.FC = () => {
   // Close the menu after a link is clicked
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  // Handle "Get in touch" button click
+  const handleGetInTouch = () => {
+    window.open(Book_A_Call, "_blank");
+    closeMenu(); // Close the menu after clicking
   };
 
   return (
@@ -49,9 +56,10 @@ const MobileNav: React.FC = () => {
           <Link to="/blogs" className={styles.menuItem} onClick={closeMenu}>
             Blog
           </Link>
+          
           <div
             className={styles.getInTouchButton}
-            onClick={closeMenu} // Optional if it's a clickable button
+            onClick={handleGetInTouch} // Redirect to Calendly link
           >
             Get in touch
           </div>

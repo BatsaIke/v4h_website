@@ -3,6 +3,8 @@ import loadable from "@loadable/component";
 
 const Footer = loadable(() => import("../../components/Footer/Footer"), { ssr: true });
 const Navbar = loadable(() => import("../../components/Navbar/Navbar"), { ssr: true });
+const Copyright = loadable(() => import("../../components/Copyright/Copyright"), { ssr: true });
+
 
 interface Lay {
   children: any | null;
@@ -15,6 +17,7 @@ const PublicLayout = ({ children, noNavbar, noFooter, }: Lay) => (
     {!noNavbar && <Navbar />}
     {children}
     {!noFooter && <Footer />}
+    <Copyright/>
   </>
 );
 

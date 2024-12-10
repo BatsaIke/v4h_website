@@ -4,6 +4,7 @@ import logo from "../../assets/images/v4hypelogo.png"; // Replace with the corre
 import facebookIcon from "../../assets/images/ri_facebook-fill.png";
 import instagramIcon from "../../assets/images/ri_linkedin-fill.png";
 import linkedinIcon from "../../assets/images/ri_whatsapp-fill.png";
+import Copyright from "../Copyright/Copyright";
 
 const Footer: React.FC = () => {
   return (
@@ -98,7 +99,9 @@ const Footer: React.FC = () => {
           </ul>
         </div>
       </div>
+     
     </footer>
+    
   );
 };
 

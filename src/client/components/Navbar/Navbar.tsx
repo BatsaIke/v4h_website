@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom"; // Import useLocation from
 import styles from "./Navbar.module.css";
 import v4hypeLogo from "../../assets/images/v4hypelogo.png";
 import MobileNav from "./MobileNav";
+import { Book_A_Call } from "../../utils/constants"; // Import the centralized link
 
 export const NavBar = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -19,6 +20,10 @@ export const NavBar = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  const handleBookCall = () => {
+    window.open(Book_A_Call, "_blank");
+  };
 
   return (
     <>
@@ -56,6 +61,7 @@ export const NavBar = () => {
               >
                 Google Ads
               </Link>
+              
               <Link
                 to="/services"
                 className={`${styles.navLink} ${
@@ -75,7 +81,11 @@ export const NavBar = () => {
             </div>
 
             {/* Call-to-Action Button */}
-            <button className={styles.button} type="button">
+            <button
+              className={styles.button}
+              type="button"
+              onClick={handleBookCall}
+            >
               Book a call
             </button>
           </div>

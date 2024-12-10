@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Hero.module.css";
 import frame1 from "../../assets/frame1.jpg";
+import { Book_A_Call } from "../../utils/constants";
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState("");
@@ -22,13 +23,24 @@ const Hero: React.FC = () => {
 
   const splitText = displayText.split(" and "); // Split "Digital Growth" and "React Development"
 
+  const handleBookCall = () => {
+    window.open(Book_A_Call, "_blank");
+  };
+
+  const handleFreeConsultation = () => {
+    window.open(Book_A_Call, "_blank");
+  };
+
+  
+
   return (
     <div className={styles.hero}>
       <div className={styles.heroContent}>
         <div className={styles.textContainer}>
           <div className={styles.stepsBackground}>
             <h1 className={styles.title}>
-              Viral 4 Hype is the partner every business needs in{" "}<br/>
+              Viral 4 Hype is the partner every business needs in{" "}
+              <br />
               <span className={styles.highlight}>
                 {splitText[0]} {/* Digital Growth */}
                 {splitText[1] && (
@@ -43,13 +55,24 @@ const Hero: React.FC = () => {
             </h1>
           </div>
           <p className={styles.description}>
-            We are a company that focuses on fast execution, efficiency, and results. We seek to establish long-term
-            partnerships that will be the foundation of success stories.
+            We are a company that focuses on fast execution, efficiency, and
+            results. We seek to establish long-term partnerships that will be
+            the foundation of success stories.
           </p>
 
           <div className={styles.callToAction}>
-            <button className={styles.bookCall}>Book a call</button>
-            <button className={styles.freeConsultation}>Free consultation call</button>
+            <button
+              className={styles.bookCall}
+              onClick={handleBookCall}
+            >
+              Book a call
+            </button>
+            <button
+              className={styles.freeConsultation}
+              onClick={handleFreeConsultation}
+            >
+              Free consultation call
+            </button>
           </div>
         </div>
         <div className={styles.imageContainer}>

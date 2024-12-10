@@ -1,8 +1,16 @@
 import React from "react";
 import styles from "./BookACall.module.css";
-import bookAcall from '../../../assets/images/bookAcall.jpg'
+import { Book_A_Call } from "../../../utils/constants"; 
 
 const BookACall: React.FC = () => {
+  const handleBookCall = () => {
+    window.open(Book_A_Call, "_blank");
+  };
+
+  const handleFreeConsultation = () => {
+    window.open(Book_A_Call, "_blank");
+  };
+
   return (
     <div className={styles.bookACall}>
       <h2 className={styles.heading}>
@@ -11,10 +19,10 @@ const BookACall: React.FC = () => {
       </h2>
       <div className={styles.callToAction}>
         <div className={styles.bookButton}>
-          <button>Book a call</button>
+          <button onClick={handleBookCall}>Book a call</button>
         </div>
         <div className={styles.freeConsultation}>
-          <button>Free consultation call</button>
+          <button onClick={handleFreeConsultation}>Free consultation call</button>
         </div>
       </div>
     </div>
