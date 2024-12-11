@@ -48,7 +48,7 @@
   align-items: center;
   gap: 16px;
   position: absolute;
-  top: 840px; /* Moves the horizontal bar and text up */
+  top: 825px; /* Moves the horizontal bar and text up */
 }
 
 .horizontalBar {
@@ -100,8 +100,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start; /* Adjust alignment to prevent excess space */
-    height: 580px;
+    justify-content: flex-start; 
+    height: 520px;
   }
 
   .verticalBarsContainer {
@@ -115,12 +115,13 @@
   .verticalBar {
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Do not change line positions */
+    gap: 10px;
+    height: 450px; 
   }
 
   .verticalBar .line:nth-child(1),
   .verticalBar .line:nth-child(5) {
-    height: 60px; /* Shortened height for the first and last two lines */
+    height: 60px; 
   }
 
   .line {
@@ -140,7 +141,7 @@
     position: relative;
     gap: 12px;
     align-items: center; /* Center-align the content */
-    top: -480px; /* Adjust height to reduce excess space below */
+    top: -400px; /* Adjust height to reduce excess space below */
   }
 
   .horizontalBar {
@@ -148,7 +149,7 @@
   }
 
   .description {
-    font-size: 32px; /* Adjusted for smaller screens */
+    font-size: 28px; /* Adjusted for smaller screens */
     line-height: 40px;
     text-align: center; /* Center-align text on mobile */
     width: 320px;

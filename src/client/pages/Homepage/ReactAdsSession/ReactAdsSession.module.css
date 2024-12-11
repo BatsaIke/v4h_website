@@ -1,114 +1,114 @@
 .reactAdsSession {
-    width: 100%;
-    padding: 140px 100px;
-    background: #f8f8f8;
-    display: flex;
-    flex-direction: column;
-    gap: 166px;
-  }
-  
-  .section {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 96px;
-  }
-  
-  .image {
-    width: 400px;
-    height: 320px;
-    border-radius: 8px;
-  }
-  
-  .content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 34px;
-  }
-  
-  .contentHeader {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  
-  .tag {
-    padding: 8px 16px;
-    background: white;
-    border: 1.5px solid #dcdcdc;
-    border-radius: 8px;
-    color: rgba(0, 0, 0, 0.2);
-    font-size: 12px;
-    font-family: Inter, sans-serif;
-    font-weight: 500;
-    line-height: 20px;
-    width: fit-content;
-  }
-  
-  .title {
-    color: #292929;
-    font-size: 32px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-    line-height: 40px;
-  }
-  
-  .description {
-    color: #525252;
-    font-size: 18px;
-    font-family: Inter, sans-serif;
-    font-weight: 400;
-    line-height: 24px;
-  }
-  
-  .readMore {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 16px;
-    border: 1px solid #f26622;
-    border-radius: 30px;
-    font-size: 16px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    color: #292929;
-    cursor: pointer;
-    width: fit-content;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .readMore:hover {
-    background: #f26622;
-    color: white;
-  }
-  
-  .arrowIcon {
-    width: 16px;
-    height: 16px;
-  }
-  
-  .features {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  
-  .feature {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 16px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-    color: #525252;
-  }
-  
-  .checkIcon {
-    width: 24px;
-    height: 24px;
-  }
- @media (max-width: 768px) {
+  width: 100%;
+  padding: 140px 100px;
+  background: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  gap: 166px;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 96px;
+}
+
+.image {
+  width: 400px;
+  height: 320px;
+  border-radius: 8px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
+
+.contentHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tag {
+  padding: 8px 16px;
+  background: white;
+  border: 1.5px solid #dcdcdc;
+  border-radius: 8px;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  font-family: Inter, sans-serif;
+  font-weight: 500;
+  line-height: 20px;
+  width: fit-content;
+}
+
+.title {
+  color: #292929;
+  font-size: 32px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.description {
+  color: #525252;
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.readMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border: 1px solid #f26622;
+  border-radius: 30px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  color: #292929;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease-in-out;
+}
+
+.readMore:hover {
+  background: #f26622;
+  color: white;
+}
+
+.arrowIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  color: #525252;
+}
+
+.checkIcon {
+  width: 24px;
+  height: 24px;
+}
+@media (max-width: 768px) {
   .reactAdsSession {
     padding: 60px 16px; /* Slightly reduce padding */
     gap: 24px; /* Adjust gap between sections */
@@ -121,12 +121,12 @@
   }
 
   .image {
-    order: 2; 
-    width: 100%; 
-    max-width: 335px; 
-    height: 335px; 
-    margin: 0 auto; 
-    border-radius: 8px; 
+    order: 2;
+    width: 100%;
+    max-width: 335px;
+    height: 335px;
+    margin: 0 auto;
+    border-radius: 8px;
   }
 
   .content {
@@ -143,8 +143,8 @@
     padding: 6px 12px; /* Reduce padding */
     font-size: 12px; /* Smaller font size for tag */
     line-height: 16px;
-    color: rgba(0, 0, 0, 0.20);
-    font-family: 'Inter', sans-serif;
+    color: rgba(0, 0, 0, 0.2);
+    font-family: "Inter", sans-serif;
     font-weight: 500;
     margin-top: 128px;
   }
@@ -153,28 +153,27 @@
     font-size: 32px; /* Adjusted for mobile */
     line-height: 28px; /* Maintain readability */
     text-align: left; /* Align title to the left */
-    color:#292929;
+    color: #292929;
     font-family: "DM Sans", sans-serif;
-line-height: 40px;
+    line-height: 40px;
     font-weight: 600;
   }
 
   .description {
     font-size: 16px; /* Smaller font size for mobile */
     line-height: 20px;
-    text-align: left; 
+    text-align: left;
     color: #525252;
     font-weight: 400;
     line-height: 24px;
-    font-family: 'Inter', sans-serif;
-
+    font-family: "Inter", sans-serif;
   }
 
   .readMore {
     gap: 8px; /* Adjust gap for readability */
     font-size: 14px; /* Adjust font size */
     padding: 8px 16px; /* Smaller padding */
-    border-radius: 24px; 
+    border-radius: 24px;
     color: #292929;
     font-family: "DM Sans", sans-serif;
     margin: 0 auto;
@@ -183,10 +182,6 @@ line-height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
-
-
   }
 
   .arrowIcon {
@@ -228,12 +223,11 @@ line-height: 40px;
   .freeConsultation {
     display: none; /* Hide this button for mobile */
   }
- span{
-  color: #525252;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 24px;
-  font-family:"DM Sans", sans-serif;
-
- }
+  span {
+    color: #525252;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: "DM Sans", sans-serif;
+  }
 }

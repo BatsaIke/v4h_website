@@ -24,5 +24,13 @@
       font-size: 12px; /* Smaller font for mobile */
       font-weight: 400; /* Lighter weight for mobile */
     }
-  }
   
+    span {
+      color: #f8f8f8;
+      font-size: 12px;
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      line-height: 20px;
+      word-wrap: break-word;
+    }
+  }

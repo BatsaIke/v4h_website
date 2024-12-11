@@ -27,7 +27,7 @@ const DedicatedSection: React.FC = () => {
         <div className={styles.horizontalBar}></div>
         <div className={styles.description}>
           Over the last four years, we have achieved an average
-          <span style={{ color: "#F26622" }}> ROAS of 10 </span>
+          <span style={{ color: "#F26622", fontSize:'32px', fontWeight:'600', lineHeight:'40px' }}> ROAS of 10 </span>
           in various markets.
           <div style={{ textAlign: "right", width: "100%" }}>
             <svg

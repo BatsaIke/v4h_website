@@ -1,54 +1,56 @@
 .adsService {
-    width: 100%;
-    padding: 92px 6px 92px 99px;
-    background: #f8f8f8;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 97px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 92px 6px 92px 99px;
+  background: #f8f8f8;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 97px;
+  box-sizing: border-box;
+}
+
+.text {
+  width: 772px;
+  color: #292929;
+  font-size: 32px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  line-height: 40px;
+  word-wrap: break-word;
+}
+
+.imageWrapper {
+  position: relative;
+}
+
+.image {
+  width: 466px;
+  height: 385px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  .adsService {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 100px 20px;
   }
-  
-  .text {
-    width: 772px;
-    color: #292929;
-    font-size: 32px;
-    font-family: "DM Sans", sans-serif;
-    font-weight: 600;
-    line-height: 40px;
-    word-wrap: break-word;
-  }
-  
-  .imageWrapper {
-    position: relative;
-  }
-  
+
   .image {
-    width: 466px;
-    height: 385px;
-    border-radius: 30px;
-    object-fit: cover;
+    width: 335px;
+    height: 277px;
   }
-  
-  /* Mobile Responsive Styles */
-  @media (max-width: 768px) {
-    .adsService {
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      gap: 30px;
-      padding: 100px 20px;
-    }
-  
-    .image {
-      width: 335px;
-      height: 277px;
-    }
-  
-    .text {
-      width: 100%;
-      font-size: 24px;
-      line-height: 28px;
-    }
+
+  .text {
+    width: 335px;
+    color: "#292929";
+    font-size: 24px;
+    font-family: "DM Sans";
+    font-weight: "600";
+    line-height: 28px;
   }
-  
+}

@@ -74,13 +74,21 @@
   }
 
   .heading {
-    font-size: 20px; /* Smaller font size for mobile */
-    line-height: 30px;
+    font-size: 24px; /* Smaller font size for mobile */
+    line-height: 28px;
+    color: '#292929';
+font-Family: 'DM Sans';
+font-Weight: '600';
+text-align: left;
   }
 
   .subtext {
-    font-size: 14px; /* Smaller font size for mobile */
-    line-height: 20px;
+    font-size: 16px; /* Smaller font size for mobile */
+    line-height: 24px;
+    color: '#525252';
+font-Family: 'DM Sans';
+font-Weight: '500';
+text-align: left;
   }
 
   .imageContainer {
@@ -92,14 +100,14 @@
   }
 
   .icon {
-    width: 60px; /* Adjusted size for smaller screens */
+    width: 87px; /* Adjusted size for smaller screens */
     height: auto;
   }
   .iconTick {
-    width: 60px; /* Reduced size for TikTok icon on mobile */
+    width: 87px; /* Reduced size for TikTok icon on mobile */
     height: auto; /* Maintain aspect ratio */
     position: relative;
-    bottom: -10px;
+    bottom: -15px;
 
   }
 }

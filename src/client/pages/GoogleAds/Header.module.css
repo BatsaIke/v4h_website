@@ -1,6 +1,9 @@
 .container {
   width: 100%;
-  background: #f8f8f8;
+  background: 
+   
+    url('../../assets/colorweb1.png') no-repeat left top / cover, /* First background image */
+    url('../../assets/colorweb2.png') no-repeat right bottom / cover; /* Second background image */
   min-height: 100vh;
   position: relative;
   display: flex;
@@ -11,6 +14,116 @@
   padding-top: 200px;
   padding-bottom: 200px;
 }
+
+.bannerImage {
+  width: 651px;
+  height: 519px;
+  background: url('../../assets/images/googleImage.png') no-repeat center / cover;
+  border-radius: 27px;
+  clip-path: polygon(
+    0% 0%,       /* Start top-left corner */
+    100% 0%,     /* Go straight across the top */
+    100% 70%,    /* Down right side */
+    95% 70%,     /* Inward notch on bottom-right corner */
+    95% 100%,    /* Down to bottom edge from notch */
+    0% 100%,     /* Across bottom edge */
+    0% 30%,      /* Up left side */
+    5% 30%,      /* Inward notch on top-left corner */
+    5% 0%        /* Back up to top line inside notch */
+  );
+  z-index: 1; /* Ensure the image is above the background layers */
+}
+
+.orangeBlur {
+  width: 288px;
+  height: 500px;
+  position: absolute;
+  left: -56px;
+  top: 10%;
+  transform: rotate(-32.25deg);
+  background: rgba(242, 102, 34, 0.09);
+  border-radius: 25px;
+  filter: blur(120px);
+  z-index: 0; /* Keep behind other elements */
+}
+
+.purpleBlur {
+  width: 288px;
+  height: 500px;
+  position: absolute;
+  left: 411px;
+  top: 40%;
+  transform: rotate(-32.25deg);
+  background: rgba(103, 34, 242, 0.1);
+  border-radius: 30px;
+  filter: blur(120px);
+  z-index: 0; /* Keep behind other elements */
+}
+
+.textContainer {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  z-index: 2; /* Ensure text is above the background layers */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .container {
+    background: 
+      #f8f8f8, /* Base background color */
+      url('../../assets/colormobile1.png') no-repeat left top / cover, /* Mobile background image 1 */
+      url('../../assets/colormobile2.png') no-repeat right bottom / cover; /* Mobile background image 2 */
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px;
+    gap: 70px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .bannerImage {
+    width: 335px; /* Adjusted width for mobile */
+    height: 266px; /* Adjusted height for mobile */
+    border-radius: 27px;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1; /* Keep above background */
+  }
+
+  .orangeBlur,
+  .purpleBlur {
+    width: 75px; /* Reduced width for mobile */
+    height: 376px; /* Adjusted height for mobile */
+    transform: rotate(-26.69deg);
+    border-radius: 10px;
+    filter: blur(120px);
+    z-index: 0; /* Keep behind other elements */
+  }
+
+  .orangeBlur {
+    position: relative;
+    left: 0;
+    top: 0;
+    background: rgba(242, 102, 34, 0.15);
+  }
+
+  .purpleBlur {
+    position: relative;
+    left: 0;
+    top: 0;
+    background: rgba(103, 34, 242, 0.1);
+  }
+
+  .textContainer {
+    align-self: stretch;
+    text-align: center; /* Center text for mobile */
+    z-index: 2; /* Ensure text remains above background */
+  }
+}
+
 
 .bannerImage {
   width: 651px;
@@ -171,6 +284,15 @@
 /* Mobile styles */
 @media (max-width: 768px) {
   .container {
+    /* Background color and images for mobile */
+    background: 
+      #f8f8f8, /* Base background color */
+      url('../../assets/colormobile1.png'), /* First mobile background image */
+      url('../../assets/colormobile2.png'); /* Second mobile background image */
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-size: cover, cover, cover;
+    background-position: center, left top, right bottom;
+
     flex-direction: column; /* Stack elements vertically */
     padding: 20px;
     gap: 70px;
@@ -216,31 +338,43 @@
     background: rgba(103, 34, 242, 0.10);
   }
 
-  .title {
-    font-size: 60px; /* Adjusted for smaller screens */
-    line-height:72px;
-    text-align: left;
-  }
-
-  .subtitle {
-    font-size: 60px; /* Adjusted for smaller screens */
+  .title span {
+    color: #292929 !important;
+    font-size: 60px !important; 
     line-height: 72px;
     text-align: left;
+    font-family: "DM Sans", sans-serif !important;
+    font-weight: 700 !important; /* Corrected font-weight */
   }
+  
+  .subtitle span {
+    font-size: 60px !important; 
+    line-height: 72px;
+    text-align: left !important;
+    font-weight: 400 !important; /* Corrected font-weight */
+    color: #292929 !important;
+  }
+  
 
   .description {
-    font-size: 18px; /* Reduced for better readability */
+    font-size: 18px !important; 
     line-height: 22px;
+    color: '#86827E' !important;
     color: #86827e; /* Adjusted color for mobile */
-    text-align: left;
+    text-align: left !important;
+    font-weight: 500;
   }
 
   .buttonGroup {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 16px;
-    align-items: center; /* Center buttons on mobile */
-  }
-  .secondaryButton{
     display: none;
+  }
+
+  .secondaryButton {
+    display: none;
+  }
+  .bannerImage{
+    width: 335px;
+    height: 266px;
+    margin-bottom: 100px;
   }
 }

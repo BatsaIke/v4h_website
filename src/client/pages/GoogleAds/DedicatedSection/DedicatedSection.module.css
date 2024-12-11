@@ -66,7 +66,7 @@
 
 .arc {
   margin-top: 8px;
-  width: 220px; /* Adjust arc width */
+  width: 270px; /* Adjust arc width */
   height: auto;
   display: block;
   position: relative;
@@ -77,13 +77,20 @@
   .dedicatedSection {
     padding: 20px;
     gap: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    height: 520px;
   }
+
 
   .arc {
     display: flex;
-    left: 150px;
+    left: 60px;
     width: 150px;
-    bottom:50px
+    bottom:50px;
+    padding-top: 5px;
   }
 
   .verticalBarsContainer {
@@ -97,14 +104,20 @@
   .verticalBar {
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Do not change line positions */
+    gap: 10px; 
+
   }
 
   /* Shorten the first two and last two lines */
   .verticalBar .line:nth-child(1),
   .verticalBar .line:nth-child(5) {
-    height: 40px; /* Shortened height for the first and last two lines */
+    height: 60px; /* Shortened height for the first and last two lines */
   }
+
+  .verticalBar .line:nth-child(3){
+    height: 280px;
+  }
+
 
   .line {
     width: 1px;
@@ -123,7 +136,7 @@
     position: relative;
     gap: 12px;
     align-items: center; /* Center-align the content */
-    top: -250px;
+    top: -420px;
   }
 
   .horizontalBar {
@@ -131,9 +144,11 @@
   }
 
   .description {
-    font-size: 28px; /* Adjusted for smaller screens */
+    font-size: 32px; /* Adjusted for smaller screens */
     line-height: 40px;
+    padding: 40px 0px;
     font-weight: 600;
+    font-Family: 'DM Sans';
     text-align: center; /* Center-align text on mobile */
     width: 90%; /* Restrict width */
   }

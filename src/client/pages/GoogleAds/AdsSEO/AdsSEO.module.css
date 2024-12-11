@@ -13,11 +13,12 @@
   max-width: 1050px;
   text-align: center;
   color: #292929;
-  font-size: 32px;
-  font-family: "DM Sans", sans-serif;
+  font-size: 24px;
+  font-family: "DM Sans";
   font-weight: 600;
-  line-height: 40px;
+  line-height: 28px;
   word-wrap: break-word;
+
 }
 
 .servicesContainer {
@@ -63,6 +64,7 @@
   font-weight: 500;
   line-height: 26px;
   word-wrap: break-word;
+  
 }
 
 @media (max-width: 768px) {
