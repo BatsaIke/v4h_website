@@ -102,34 +102,40 @@
   line-height: 26px;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .titleContainer h1 {
     font-size: 40px;
     line-height: 48px;
-    color: #292929; /* White color for mobile */
+    color: #292929;
     font-family: "DM Sans", sans-serif;
     font-weight: 600;
-    text-align: left;
+    text-align: left
+  }
+  .tag {
+    display: flex;
+    justify-content: flex-start;
+    text-align: left; /* Align the tag and its content to the left */
+    width: fit-content;
+    margin-left: 0; /* Optional: Remove extra margin if any */
   }
 
   .tag span {
-    color: rgba(0, 0, 0, 0.2); /* Properly formatted rgba */
+    color: rgba(0, 0, 0, 0.2); /* Ensure consistent color */
     font-size: 12px;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     line-height: 20px;
+    text-align: left; /* Align the span text to the left */
   }
-
   .description {
     font-size: 16px;
     line-height: 24px;
-    color: '#525252';
-
-font-Family: 'Inter';
-font-Weight: '400';
-line-Height: 24px;
-text-align: left;
-margin-top: 16px;
+    color: #525252;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 16px;
   }
 
   .imageContainer {
@@ -153,26 +159,27 @@ margin-top: 16px;
   }
 
   .imageText h2 {
-    color: '#FEFEFE';
-font-Size: 20px;
-font-Family: 'Inter';
-font-Weight: '500';
-line-Height: 32px;
-text-align: left;
+    color: #FEFEFE;
+    font-size: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: left;
   }
 
   .imageText p {
-    color: '#FEFEFE';
-font-Size: 16px;
-font-Family: 'DM Sans';
-font-Weight: '600';
-line-Height: 24px;
+    color: #FEFEFE;
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    line-height: 24px;
   }
+
   .titleContainer .highlight {
     color: #F26622;
-    font-size: 40px; /* Convert '40' to '40px' */
+    font-size: 40px;
     font-family: "DM Sans", sans-serif;
-    font-weight: 600; /* Correctly formatted */
+    font-weight: 600;
     line-height: 48px;
   }
 }

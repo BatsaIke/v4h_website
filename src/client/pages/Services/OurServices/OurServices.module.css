@@ -43,7 +43,8 @@
 .icon {
   width: 24px;
   height: 24px;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%) contrast(100%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(360deg) brightness(100%)
+    contrast(100%);
 }
 
 .serviceText {
@@ -74,11 +75,11 @@
 
   .heading {
     line-height: 40px;
-    color: '#292929';
-font-Size: 32;
-padding: 100px 10px;
-font-Family: 'DM Sans';
-font-Weight: '600';
+    color: "#292929";
+    font-size: 32;
+    padding: 100px 10px;
+    font-family: "DM Sans";
+    font-weight: "600";
   }
 
   .servicesGrid {
@@ -102,10 +103,10 @@ font-Weight: '600';
 
   .serviceText {
     line-height: 26px;
-    color: '#292929';
-font-Size: 18;
-font-Family: 'DM Sans';
-font-Weight: '500';
+    color: "#292929";
+    font-size: 18;
+    font-family: "DM Sans";
+    font-weight: "500";
   }
 
   .note {
@@ -113,8 +114,8 @@ font-Weight: '500';
     font-size: 24px;
     line-height: 28px;
     text-align: left;
-    color: '#F26622';
-font-Family: 'DM Sans';
-font-Weight: '600';
+    color: "#F26622";
+    font-family: "DM Sans";
+    font-weight: "600";
   }
 }

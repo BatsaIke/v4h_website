@@ -92,15 +92,15 @@
     line-height: 40px;
     width: 330px;
     color: '#F8F8F8';
-font-Family: 'DM Sans';
-font-Weight: '600';
+font-family: 'DM Sans';
+font-weight: '600';
   }
 
   .subHeading {
     font-size: 16px;
     color: '#F8F8F8';
-font-Family: 'IBM Plex Sans';
-font-Weight: '500';
+font-family: 'IBM Plex Sans';
+font-weight: '500';
     width: 330px;
   }
 

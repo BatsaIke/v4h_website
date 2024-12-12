@@ -101,7 +101,7 @@
 
   .feature {
     width: auto; /* Allow feature to adjust its width */
-    gap: 16px; 
+    gap: 16px;
     margin-top: 50px;
   }
 
@@ -117,10 +117,10 @@
   }
 
   .featureText {
-    font-size: 16px; 
-    color: '#525252';
-font-Family: 'Inter';
-font-Weight: '400';
-line-Height: 24px;
+    font-size: 16px;
+    color: "#525252";
+    font-family: "Inter";
+    font-weight: "400";
+    line-height: 24px;
   }
 }
