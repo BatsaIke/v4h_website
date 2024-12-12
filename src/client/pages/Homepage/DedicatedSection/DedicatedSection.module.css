@@ -101,7 +101,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; 
-    height: 520px;
+    height: 590px;
   }
 
   .verticalBarsContainer {
@@ -116,7 +116,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 450px; 
+    height: 630px; 
   }
 
   .verticalBar .line:nth-child(1),
@@ -141,7 +141,7 @@
     position: relative;
     gap: 12px;
     align-items: center; /* Center-align the content */
-    top: -400px; /* Adjust height to reduce excess space below */
+    top: -570px; /* Adjust height to reduce excess space below */
   }
 
   .horizontalBar {
@@ -149,10 +149,11 @@
   }
 
   .description {
-    font-size: 28px; /* Adjusted for smaller screens */
+    font-size: 32px; /* Adjusted for smaller screens */
     line-height: 40px;
     text-align: center; /* Center-align text on mobile */
-    width: 320px;
+    width: 325px;
+    padding: 5px 10px;
   }
 
   .roasContainer {

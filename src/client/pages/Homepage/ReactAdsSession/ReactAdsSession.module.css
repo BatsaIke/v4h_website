@@ -183,10 +183,7 @@
     align-items: center;
     justify-content: center;
   }
-  .readMore span{
-    color: #292929;
-    
-  }
+
 
   .arrowIcon {
     width: 12px; /* Adjust size for smaller screens */
@@ -202,6 +199,13 @@
     gap: 8px; /* Maintain gap between icon and text */
     font-size: 14px; /* Adjust font size for mobile */
     text-align: left; /* Align feature text to the left */
+  }
+  .feature span {
+    color: #525252; /* Set the desired font color */
+    font-size: 16px; /* Maintain consistency in font size */
+    font-family: "DM Sans", sans-serif; /* Ensure proper font family */
+    font-weight: 600; /* Set the desired font weight */
+    line-height: 24px; /* Ensure proper spacing between lines */
   }
 
   .checkIcon {
@@ -227,7 +231,7 @@
   .freeConsultation {
     display: none; /* Hide this button for mobile */
   }
-  span {
+  .readMore span {
     color: #525252;
     font-size: 16px;
     font-weight: 600;

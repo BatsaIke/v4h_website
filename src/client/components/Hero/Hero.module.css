@@ -135,11 +135,6 @@
     margin-top: 50px;
   }
 
-  .textContainer {
-    max-width: 100%;
-    text-align: center;
-    align-items: center;
-  }
 
   .title {
     font-size: 32px;
@@ -161,20 +156,28 @@
   }
 
   .callToAction {
-    flex-direction: column;
-    gap: 8px;
-    width: 100%;
-    justify-content: center;
-    padding: 0;
+    flex-direction: row; /* Ensure buttons are on the same line */
+    gap: 8px; /* Adjust spacing between buttons */
+    width: fit-content; /* Adjust width to wrap around buttons only */
+    justify-content: flex-start; /* Align the buttons to the left */
+    padding: 0 12px; /* Keep padding for border spacing */
+    border: 1px solid #DCDCDC; /* Ensure border remains */
+    border-radius: 30px; /* Keep the rounded border */
   }
-
   .bookCall {
-    width: 100%;
-    padding: 12px;
+    width: auto; /* Allow the button to adjust its size dynamically */
+    padding: 8px 16px; /* Adjust padding for better fit */
   }
 
   .freeConsultation {
-    display: none; /* Hide on mobile as per requirements */
+    display: inline-block; /* Ensure this button is visible */
+    width: auto; /* Allow it to adjust dynamically */
+    padding: 8px 16px; /* Adjust padding for better fit */
+  }
+
+  .textContainer {
+    align-items: flex-start; /* Align the text container to the left */
+    text-align: left; /* Align the text content to the left */
   }
 
   .imageContainer {

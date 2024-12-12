@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   gap: 70px;
   padding: 100px 50px;
 }
@@ -83,11 +83,11 @@
   background: rgba(0, 0, 0, 0.1);
 }
 
-.seeAll span {
+.seeAllLink span {
   color: black;
   font-size: 16px;
   font-family: "DM Sans", sans-serif;
-  font-weight: 500;
+  font-weight: 500 !important;
   line-height: 24px;
 }
 
@@ -115,11 +115,10 @@
 
   .blogTitle {
     font-size: 24px;
-    text-align: left;
+    text-align: left !important;
     margin-bottom: 16px;
-
-font-Weight: '500';
-line-Height: 28px;
+    font-weight: 500;
+    line-height: 28px;
   }
 
   .blogCards {
