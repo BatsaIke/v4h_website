@@ -160,12 +160,20 @@
       padding: 40px 20px 60px; /* Adjusted padding for smaller screens */
     }
   
+    
     .filterBar {
       gap: 10px; /* Reduced gap between filters */
+      text-align: left; /* Aligns the entire filter bar to the left */
+      justify-content: flex-start; /* Ensures items are left-aligned */
+      color: #292929; /* Ensure consistent color */
     }
   
     .filter {
-      font-size: 14px;
+      font-size: 16px;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-weight: 500;
+      color: #292929;
+      text-align: left; /* Ensures each filter is left-aligned */
     }
   
     .articleGrid {
@@ -185,9 +193,29 @@
     .articleText p {
       font-size: 14px;
     }
+  .articleText h3{
+    color: '#FEFEFE';
+font-Size: 20px;
+font-Family: 'Inter';
+font-Weight: '500';
+line-Height: 32px;
+width: 100%;
+  }
+  .articleText p{
+    color: '#FEFEFE';
+font-Size: 14px;
+font-Family: 'IBM Plex Sans';
+font-Weight: '600';
+
+  }
+    .articleImage {
+      width: 335px;
+      height: 251px;
+    }
   
     .loadMore button {
       font-size: 14px;
     }
   }
+  
   

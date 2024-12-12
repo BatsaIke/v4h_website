@@ -73,8 +73,12 @@
   }
 
   .heading {
-    font-size: 24px;
-    line-height: 32px;
+    line-height: 40px;
+    color: '#292929';
+font-Size: 32;
+padding: 100px 10px;
+font-Family: 'DM Sans';
+font-Weight: '600';
   }
 
   .servicesGrid {
@@ -92,18 +96,25 @@
   }
 
   .icon {
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
   }
 
   .serviceText {
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 26px;
+    color: '#292929';
+font-Size: 18;
+font-Family: 'DM Sans';
+font-Weight: '500';
   }
 
   .note {
-    width: 100%; /* Adjust width for smaller screens */
-    font-size: 18px;
-    line-height: 26px;
+    width: 335px; /* Adjust width for smaller screens */
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+    color: '#F26622';
+font-Family: 'DM Sans';
+font-Weight: '600';
   }
 }

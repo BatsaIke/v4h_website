@@ -12,7 +12,7 @@ const BlogHeader: React.FC = () => {
         <div className={styles.titleContainer}>
           <h1>
             Here’s our latest article about{" "}
-            <span className={styles.highlight}>business</span>
+           <br/> <span className={styles.highlight}>business</span>
           </h1>
           <p className={styles.description}>
             Discover the latest trends and strategies in digital marketing and IT

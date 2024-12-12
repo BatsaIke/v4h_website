@@ -183,6 +183,10 @@
     align-items: center;
     justify-content: center;
   }
+  .readMore span{
+    color: #292929;
+    
+  }
 
   .arrowIcon {
     width: 12px; /* Adjust size for smaller screens */

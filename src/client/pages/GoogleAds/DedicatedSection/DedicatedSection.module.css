@@ -135,7 +135,7 @@
   .contentWrapper {
     position: relative;
     gap: 12px;
-    align-items: center; /* Center-align the content */
+    align-items: center; 
     top: -420px;
   }
 

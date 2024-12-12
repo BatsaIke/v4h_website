@@ -95,19 +95,43 @@
     gap: 20px; /* Reduce spacing between elements */
   }
 
+  .highlight{
+    color: '#F8F8F8';
+font-Size: 24px;
+font-Family: 'DM Sans';
+font-Weight: '600';
+line-Height: 28px;
+  }
   .title {
     font-size: 24px; /* Further reduce title size */
-    line-height: 32px;
+    line-height: 28px;
+    color: '#292929';
+font-Family: 'DM Sans';
+font-Weight: '600';
+text-align: left;
+
   }
 
   .description {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    color: '#525252';
+font-Family: 'Inter';
+font-Weight: '400';
+line-Height: 24px;
+
   }
 
   .getInTouchButton {
     font-size: 14px;
     padding: 8px 16px;
+    width: 303px;
+    color: '#292929';
+font-Size: 16;
+font-Family: 'DM Sans';
+font-Weight: '500';
+line-Height: 24px;
   }
 
   .dottedBackground {

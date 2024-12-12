@@ -90,13 +90,18 @@
   .mainHeading {
     font-size: 32px;
     line-height: 40px;
-    width: 100%;
+    width: 330px;
+    color: '#F8F8F8';
+font-Family: 'DM Sans';
+font-Weight: '600';
   }
 
   .subHeading {
     font-size: 16px;
-    line-height: 24px;
-    width: 100%;
+    color: '#F8F8F8';
+font-Family: 'IBM Plex Sans';
+font-Weight: '500';
+    width: 330px;
   }
 
   .ctaContainer {
@@ -106,10 +111,14 @@
   }
 
   .bookCallButton {
-    width: 100%;
+    width: 113px;
   }
 
   .consultationText {
     display: none; /* Hide this text on mobile screens */
+  }
+
+  .ctaContainer {
+   border: none;
   }
 }
