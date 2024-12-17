@@ -50,6 +50,10 @@
   right: 0; /* Slides the menu into view */
 }
 
+.menuIcon img {
+  filter: brightness(0) saturate(100%) invert(24%) sepia(3%) saturate(311%) hue-rotate(6deg) brightness(96%) contrast(88%) !important;
+}
+
 /* Menu Content */
 .menuContent {
   padding-top: 50px;
