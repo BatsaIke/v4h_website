@@ -113,8 +113,6 @@
     text-align: left
   }
   .tag {
-    display: flex;
-    justify-content: flex-start;
     text-align: left; /* Align the tag and its content to the left */
     width: fit-content;
     margin-left: 0; /* Optional: Remove extra margin if any */
