@@ -153,4 +153,19 @@ export const blogArticles = [
     ],
     image: blogImage8,
   },
+  {
+    id: "8",
+    title: "Tehnologii emergente în marketing digital",
+    subtitle: "Emerging technologies to watch.",
+    date: "15 March 2024",
+    category: "SEO",
+    sections: [
+      {
+        title: "Introduction",
+        content:
+          "Tehnologiile emergente precum AR și VR schimbă modul în care brandurile interacționează cu consumatorii...",
+      },
+    ],
+    image: blogImage8,
+  },
 ];

@@ -6,6 +6,7 @@ import { blogArticles } from "../BlogData"; // Import blog data
 const BlogContent: React.FC = () => {
   const navigate = useNavigate();
   const [selectedCategory, setSelectedCategory] = useState<string>("All articles");
+  const [visibleArticles, setVisibleArticles] = useState<number>(8); // Tracks how many articles are visible
 
   // Extract unique categories dynamically
   const categories = [
@@ -19,6 +20,11 @@ const BlogContent: React.FC = () => {
       ? blogArticles
       : blogArticles.filter((article) => article.category === selectedCategory);
 
+  // Load More functionality
+  const handleLoadMore = () => {
+    setVisibleArticles((prev) => prev + 8); // Load 8 more articles
+  };
+
   return (
     <div className={styles.blogContent}>
       {/* Category Filter */}
@@ -29,7 +35,10 @@ const BlogContent: React.FC = () => {
             className={`${styles.filter} ${
               selectedCategory === category ? styles.activeFilter : ""
             }`}
-            onClick={() => setSelectedCategory(category)}
+            onClick={() => {
+              setSelectedCategory(category);
+              setVisibleArticles(8); // Reset visible articles when category changes
+            }}
           >
             {category}
           </div>
@@ -38,7 +47,7 @@ const BlogContent: React.FC = () => {
 
       {/* Article Grid */}
       <div className={styles.articleGrid}>
-        {filteredArticles.map((article) => (
+        {filteredArticles.slice(0, visibleArticles).map((article) => (
           <div
             key={article.id}
             className={styles.article}
@@ -61,9 +70,11 @@ const BlogContent: React.FC = () => {
       </div>
 
       {/* Load More Button */}
-      <div className={styles.loadMore}>
-        <button>Load more</button>
-      </div>
+      {visibleArticles < filteredArticles.length && ( // Show button only if there are more articles
+        <div className={styles.loadMore}>
+          <button onClick={handleLoadMore}>Load more</button>
+        </div>
+      )}
     </div>
   );
 };

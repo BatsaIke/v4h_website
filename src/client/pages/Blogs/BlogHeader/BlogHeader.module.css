@@ -26,12 +26,15 @@
   text-align: center;
 }
 
-.tag span {
-  color: rgba(0, 0, 0, 0.2);
+.blogHeader .tag span {
+  color: #494543 !important; /* High specificity ensures this rule is applied */
   font-size: 12px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
+  line-height: 20px;
+  text-align: left;
 }
+
 
 .titleContainer h1 {
   font-size: 40px;
@@ -119,13 +122,15 @@
   }
 
   .tag span {
-    color: rgba(0, 0, 0, 0.2); /* Ensure consistent color */
+    color: #494543 !important; /* High specificity ensures this rule is applied */
     font-size: 12px;
     font-family: "Inter", sans-serif;
     font-weight: 500;
     line-height: 20px;
-    text-align: left; /* Align the span text to the left */
+    text-align: left;
+    background-color: #F26622;
   }
+  
   .description {
     font-size: 16px;
     line-height: 24px;
