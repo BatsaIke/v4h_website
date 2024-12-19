@@ -114,7 +114,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 630px; 
+    height: 600px; 
   }
 
   .verticalBar .line:nth-child(1),
@@ -139,7 +139,7 @@
     position: relative;
     gap: 12px;
     align-items: center; /* Center-align the content */
-    top: -570px; /* Adjust height to reduce excess space below */
+    top: -525px; /* Adjust height to reduce excess space below */
   }
 
   .horizontalBar {
@@ -150,7 +150,7 @@
     font-size: 32px; /* Adjusted for smaller screens */
     line-height: 40px;
     text-align: center; /* Center-align text on mobile */
-    width: 325px;
+    width: 360px;
     padding: 5px 10px;
   }
 

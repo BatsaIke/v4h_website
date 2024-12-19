@@ -68,6 +68,11 @@
   z-index: 2; /* Ensure text is above the background layers */
 }
 
+.tag span{
+  color: #494543 !important;
+
+}
+
 /* Mobile styles */
 @media (max-width: 768px) {
   .container {
@@ -77,6 +82,7 @@
       url('../../assets/colormobile2.png') no-repeat right bottom / cover; /* Mobile background image 2 */
     flex-direction: column; /* Stack elements vertically */
     padding: 20px;
+
     gap: 70px;
     justify-content: center;
     align-items: center;
@@ -175,6 +181,7 @@
 }
 
 .tag {
+  margin-top: 100px;
   padding: 8px 16px;
   background: white;
   border-radius: 8px;
@@ -186,11 +193,12 @@
 }
 
 .tag span {
-  color: rgba(0, 0, 0, 0.2);
+  color: #494543 !important;
   font-size: 12px;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   line-height: 20px;
+
 }
 
 .titleContainer {
