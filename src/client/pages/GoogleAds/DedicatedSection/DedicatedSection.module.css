@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
+  
 }
 
 .verticalBarsContainer {
@@ -43,20 +44,21 @@
   align-items: center;
   gap: 16px;
   position: relative;
-  top: -370px; /* Adjusted position for your layout */
+  top: -390px; /* Adjusted position for your layout */
 }
 
 .horizontalBar {
-  width: 104%;
+  width: 124%;
   max-width: 1180px;
   height: 1px;
   background-color: #525252;
 }
 
 .description {
-  width: 1077px;
+  width: 903px;
   text-align: center;
   color: #f8f8f8;
+  padding: 20px 0px;
   font-size: 40px;
   font-family: "DM Sans", sans-serif;
   font-weight: 600;
@@ -66,7 +68,7 @@
 
 .arc {
   margin-top: 8px;
-  width: 270px; /* Adjust arc width */
+  width: 200px; /* Adjust arc width */
   height: auto;
   display: block;
   position: relative;
@@ -87,7 +89,7 @@
 
   .arc {
     display: flex;
-    left: 60px;
+    left: 130px;
     width: 150px;
     bottom:50px;
     padding-top: 5px;

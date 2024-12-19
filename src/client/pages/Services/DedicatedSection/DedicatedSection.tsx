@@ -29,20 +29,21 @@ const DedicatedSection: React.FC = () => {
           We develop projects ranging from simple presentation websites & online
           stores to complex web apps.
           <div style={{ textAlign: "right", width: "100%" }}>
-            <svg
-              className={styles.arc}
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 200 20"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M0,10 Q100,30 200,10"
-                fill="none"
-                stroke="#F26622"
-                strokeWidth="2"
-              />
-            </svg>
-          </div>
+  <svg
+    className={styles.arc}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 200 20"
+    preserveAspectRatio="none"
+  >
+    <path
+      d="M0,10 Q100,-10 200,10"
+      fill="none"
+      stroke="#F26622"
+      strokeWidth="2"
+    />
+  </svg>
+</div>
+
         </div>
         <div className={styles.horizontalBar}></div>
       </div>

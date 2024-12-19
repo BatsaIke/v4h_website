@@ -18,6 +18,7 @@
   color: #292929;
   font-size: 32px;
   font-family: "DM Sans", sans-serif;
+  width: 810px;
   font-weight: 600;
   line-height: 40px;
   margin-bottom: 16px;
@@ -29,6 +30,8 @@
   font-family: "DM Sans", sans-serif;
   font-weight: 500;
   line-height: 26px;
+  width: 862px;
+
 }
 
 .imageContainer {
@@ -47,6 +50,13 @@
 }
 
 .icon {
+  width: 100px;
+  height: auto;
+  position: relative;
+  right: 180px;
+}
+
+.iconTick{
   width: 100px;
   height: auto;
 }
@@ -80,6 +90,7 @@
     font-family: "DM Sans"; /* Correct capitalization */
     font-weight: 600; /* Correct capitalization */
     text-align: left;
+    width: 335px;
   }
 
   .subtext {
@@ -89,25 +100,32 @@
     font-family: "DM Sans"; /* Correct capitalization */
     font-weight: 500; /* Correct capitalization */
     text-align: left;
+    width: 335px;
+
   }
 
   .imageContainer {
-    flex-direction: row; /* Icons in a single row */
-    justify-content: space-evenly; /* Even spacing across the container */
-    align-items: flex-end; /* Align icons at the base */
-    padding: 0; /* Remove extra padding */
-    gap: 16px; /* Smaller gap for mobile */
+    display: flex;
+    flex-direction: row; 
+    /* justify-content: space-between;  */
+    align-items: flex-start; 
+    padding: 0;
+    gap: 16px; 
+    flex-wrap: nowrap; /* Prevent wrapping */
   }
-
+  
   .icon {
-    width: 87px; /* Adjusted size for smaller screens */
+    width: 87px;
     height: auto;
+    flex-shrink: 0; /* Prevent shrinking */
   }
-
+  
   .iconTick {
-    width: 87px; /* Reduced size for TikTok icon on mobile */
-    height: auto; /* Maintain aspect ratio */
+    width: 87px;
+    height: auto;
     position: relative;
     bottom: -15px;
+    flex-shrink: 0; /* Prevent shrinking */
   }
+  
 }

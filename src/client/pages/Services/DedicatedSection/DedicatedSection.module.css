@@ -69,7 +69,10 @@
   width: 300px; /* Adjust arc width */
   height: auto;
   display: block;
+  position: relative;
+  left: 650px;
 }
+
 
 @media (max-width: 768px) {
   .dedicatedSection {
