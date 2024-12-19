@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./AdsService.module.css";
 import adsimage from '../../../assets/images/adsimage.png'
+import BackgroundLines from "../../../components/BackgroundLines/BackgroundLines";
 const AdsService: React.FC = () => {
   return (
     <div className={styles.adsService}>

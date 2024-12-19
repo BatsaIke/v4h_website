@@ -11,10 +11,10 @@ const Hero: React.FC = () => {
     const updateTextForMobile = () => {
       if (window.innerWidth <= 768) {
         // Update fullText for mobile view
-        setFullText("Digital Marketing and REACT Web Development");
+        setFullText("Diigital Marketing and REACT Web Development");
       } else {
         // Revert to default for larger screens
-        setFullText("Digital Growth and React Development");
+        setFullText("Diigital Growth and React Development");
       }
     };
 

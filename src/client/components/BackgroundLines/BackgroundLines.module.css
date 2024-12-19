@@ -1,0 +1,10 @@
+.background {
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      100% 100% at 50% 50%, /* Adjust the gradient's center */
+      rgba(239, 239, 239, 0) 60%, /* Transparent at 60% */
+      #efefef 100% /* Solid color at 100% */
+    );
+  }
+  
