@@ -18,8 +18,16 @@ const ReactAdsSession: React.FC = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleGetInTouch = () => {
-    window.open(Book_A_Call, "_blank");
+  const handleGoogleAdsClick = () => {
+    if (isMobile) {
+      window.location.href = "/google-ads";
+    }
+  };
+
+  const handleReactAdsClick = () => {
+    if (isMobile) {
+      window.location.href = "/services";
+    }
   };
 
   return (
@@ -46,10 +54,10 @@ const ReactAdsSession: React.FC = () => {
           </p>
           <div
             className={styles.readMore}
-            onClick={isMobile ? handleGetInTouch : undefined}
+            onClick={!isMobile ? undefined : handleGoogleAdsClick}
           >
             {isMobile ? (
-              <span>Get in touch</span>
+              <span>Read more</span>
             ) : (
               <span>Read more about our digital marketing services</span>
             )}
@@ -100,12 +108,12 @@ const ReactAdsSession: React.FC = () => {
           </div>
           <div
             className={styles.readMore}
-            onClick={isMobile ? handleGetInTouch : undefined}
+            onClick={!isMobile ? undefined : handleReactAdsClick}
           >
             {isMobile ? (
-              <span>Get in touch</span>
+              <span>Read more</span>
             ) : (
-              <span>Read more about our digital marketing services</span>
+              <span>Read more about our React web development services</span>
             )}
             {!isMobile && (
               <img src={arrorup} alt="Arrow Up" className={styles.arrowIcon} />
