@@ -104,28 +104,22 @@
 
   }
 
-  .imageContainer {
+  .imageContainerMobile {
     display: flex;
-    flex-direction: row; 
-    /* justify-content: space-between;  */
-    align-items: flex-start; 
-    padding: 0;
-    gap: 16px; 
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-direction: row; /* Align icons left to right */
+    justify-content: center; /* Center icons horizontally */
+    align-items: center; /* Align icons vertically */
+    gap: 16px; /* Space between icons */
+    width: 100%; /* Full width for centering */
   }
-  
+
   .icon {
-    width: 87px;
+    width: 87px; /* Adjust icon size */
     height: auto;
-    flex-shrink: 0; /* Prevent shrinking */
+    margin: 0; /* Remove any margins pushing icons */
+    position: static; /* Reset position to avoid right offsets */
   }
   
-  .iconTick {
-    width: 87px;
-    height: auto;
-    position: relative;
-    bottom: -15px;
-    flex-shrink: 0; /* Prevent shrinking */
-  }
+  
   
 }

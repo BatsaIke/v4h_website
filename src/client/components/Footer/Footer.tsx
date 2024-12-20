@@ -96,15 +96,11 @@ const Footer: React.FC = () => {
                 contact@viral4hype.com
               </a>
             </li>
-            <li>
-              <a href="tel:+40753754321" className={styles.link}>
-                +40 753 754 321
-              </a>
-            </li>
+           
             <li>
               <span className={styles.address}>
-                Bucharest<br />
-                Baba Novac 12, Romania, 400124
+              Bucharest, Romania<br />
+                Constanta, Romania
               </span>
             </li>
           </ul>

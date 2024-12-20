@@ -51,8 +51,9 @@
 }
 
 .menuIcon img {
-  filter: brightness(0) saturate(100%) invert(24%) sepia(3%) saturate(311%) hue-rotate(6deg) brightness(96%) contrast(88%) !important;
+  filter: brightness(0) saturate(100%) invert(10%) sepia(3%) saturate(703%) hue-rotate(5deg) brightness(91%) contrast(50%);
 }
+
 
 /* Menu Content */
 .menuContent {

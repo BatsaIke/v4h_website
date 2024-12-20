@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./OtherPPC.module.css";
 import googleAdsIcon from "../../assets/images/googleadicon.png";
 import metaAdIcon from "../../assets/images/metaAds.png";
 import tiktokAdIcon from "../../assets/images/tiktokAds.png";
 
 const OtherPPC: React.FC = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <div className={styles.otherPPC}>
       <div className={styles.textContainer}>
@@ -19,11 +30,19 @@ const OtherPPC: React.FC = () => {
           about data and a high-quality web presence.
         </p>
       </div>
-      <div className={styles.imageContainer}>
-        <img src={metaAdIcon} alt="Meta Ads" className={styles.icon} />
-        <img src={tiktokAdIcon} alt="TikTok Ads" className={styles.iconTick} />
-        <img src={googleAdsIcon} alt="Google Ads" className={styles.icon} />
-      </div>
+      {isMobile ? (
+        <div className={styles.imageContainerMobile}>
+          <img src={metaAdIcon} alt="Meta Ads" className={styles.icon} />
+          <img src={tiktokAdIcon} alt="TikTok Ads" className={styles.icon} />
+          <img src={googleAdsIcon} alt="Google Ads" className={styles.icon} />
+        </div>
+      ) : (
+        <div className={styles.imageContainer}>
+          <img src={metaAdIcon} alt="Meta Ads" className={styles.icon} />
+          <img src={tiktokAdIcon} alt="TikTok Ads" className={styles.icon} />
+          <img src={googleAdsIcon} alt="Google Ads" className={styles.icon} />
+        </div>
+      )}
     </div>
   );
 };
