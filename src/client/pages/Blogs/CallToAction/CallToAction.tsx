@@ -15,7 +15,7 @@ const CallToAction: React.FC = () => {
       <div className={styles.buttonContainer}>
         <input
           type="email"
-          placeholder="Enter your email"
+          placeholder="email"
           className={styles.inputField}
         />
         <button className={styles.button}>Get in touch</button>

@@ -104,44 +104,79 @@
   @media (max-width: 768px) {
     .ctaSection {
       width: 100%;
-      padding: 10px 16px;
-      gap: 40px;
+      padding: 70px 16px; /* Match the padding */      gap: 40px;
       bottom: +0px;
       border-radius: 0;
       margin-bottom: 0px;
+      
     }
-  
     .textContainer {
       align-self: stretch;
       gap: 8px;
+      text-align: center;
     }
   
     .title {
       font-size: 24px;
       line-height: 28px;
+      color: #fefefe;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 600;
+      word-wrap: break-word;
     }
   
     .description {
       width: 100%;
       font-size: 16px;
       line-height: 24px;
+      color: #fefefe;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      word-wrap: break-word;
     }
   
     .buttonContainer {
       align-self: stretch;
       flex-direction: column;
       gap: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   
     .inputField {
-      width: 100%;
       height: 40px;
       padding: 8px 16px;
+      border-radius: 8px;
+      border: 1.5px solid #f8f8f8;
+      background-color: transparent;
+      color: #f8f8f8;
+      font-size: 16px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+      outline: none;
+      transition: border-color 0.3s ease, background-color 0.3s ease;
     }
   
     .button {
-      width: 100%;
       height: 40px;
+      padding: 8px 16px;
+      background: #f8f8f8;
+      border-radius: 8px;
+      color: #292929;
+      font-size: 16px;
+      font-family: 'IBM Plex Sans', sans-serif;
+      font-weight: 500;
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+  
+    .button:hover {
+      background: #d9d9d9;
+      color: #000;
     }
   }
-  
