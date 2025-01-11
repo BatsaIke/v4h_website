@@ -99,7 +99,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start; 
-    height: 590px;
+    height: 400px;
   }
 
   .verticalBarsContainer {
@@ -114,7 +114,7 @@
     flex-direction: column;
     align-items: center;
     gap: 10px;
-    height: 600px; 
+    height: 350px; 
   }
 
   .verticalBar .line:nth-child(1),
@@ -139,7 +139,7 @@
     position: relative;
     gap: 12px;
     align-items: center; /* Center-align the content */
-    top: -525px; /* Adjust height to reduce excess space below */
+    top: -315px; /* Adjust height to reduce excess space below */
   }
 
   .horizontalBar {
@@ -147,11 +147,15 @@
   }
 
   .description {
-    font-size: 32px; /* Adjusted for smaller screens */
-    line-height: 40px;
-    text-align: center; /* Center-align text on mobile */
-    width: 360px;
-    padding: 5px 10px;
+    width: 90%; /* Adjust to screen size */
+    text-align: center;
+    color: #f8f8f8;
+    font-size: clamp(20px, 5vw, 32px); /* Responsive font size */
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+    word-wrap: break-word;
+    margin: 16px 0;
   }
 
   .roasContainer {
