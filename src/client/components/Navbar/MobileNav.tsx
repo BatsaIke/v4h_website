@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./MobileNav.module.css";
 import logo from "../../assets/images/v4hypelogo.png";
-import menuIcon from "../../assets/images/ci_menu-alt-01.png";
-import closeIcon from "../../assets/images/close.png";
+import menuIcon from "../../assets/ci_menu-alt-01.svg";
+import closeIcon from "../../assets/close.svg";
 import { Book_A_Call } from "../../utils/constants"; // Import the centralized link
 
 const MobileNav: React.FC = () => {
