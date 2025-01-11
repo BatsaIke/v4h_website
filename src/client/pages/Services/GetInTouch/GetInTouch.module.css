@@ -88,7 +88,7 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
   .container {
-    padding: 60px 16px; /* Further reduce padding */
+    padding: 120px 16px; /* Further reduce padding */
   }
 
   .content {
@@ -133,16 +133,18 @@
   }
 
   .dottedBackground {
-    width: 60px; /* Smaller size for background */
+    width: 60px; 
     height: 60px;
     bottom: 10%;
-    left: 10%;
+    left: 2%;
+    
   }
 
   .dottedBackgroundTopRight {
     width: 60px; /* Adjust size for mobile */
     height: 60px;
     top: 5%;
-    right: 10%; /* Adjust position for mobile */
+    right: 2%; /* Adjust position for mobile */
+    margin-bottom: 20px;
   }
 }

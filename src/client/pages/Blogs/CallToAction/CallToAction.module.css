@@ -11,7 +11,7 @@
     display: flex;
     margin: 0 auto;
     bottom: -100px;
-    z-index: 1100;
+    z-index: 10;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -146,6 +146,7 @@
   
     .inputField {
       height: 40px;
+      width: 100%;
       padding: 8px 16px;
       border-radius: 8px;
       border: 1.5px solid #f8f8f8;
