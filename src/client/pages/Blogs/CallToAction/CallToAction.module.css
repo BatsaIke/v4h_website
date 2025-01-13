@@ -54,20 +54,7 @@
     gap: 16px;
   }
   
-  .inputField {
-    width: 330px;
-    height: 40px;
-    padding: 8px 16px;
-    border-radius: 8px;
-    border: 1.5px solid #f8f8f8;
-    background-color: transparent;
-    color: #f8f8f8;
-    font-size: 16px;
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    outline: none;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
-  }
+ 
   
   .inputField::placeholder {
     color: #f8f8f8;
@@ -117,7 +104,7 @@
     }
   
     .title {
-      font-size: 24px;
+      font-size: 32px;
       line-height: 28px;
       color: #fefefe;
       font-family: 'DM Sans', sans-serif;
@@ -144,20 +131,7 @@
       align-items: center;
     }
   
-    .inputField {
-      height: 40px;
-      width: 100%;
-      padding: 8px 16px;
-      border-radius: 8px;
-      border: 1.5px solid #f8f8f8;
-      background-color: transparent;
-      color: #f8f8f8;
-      font-size: 16px;
-      font-family: 'Inter', sans-serif;
-      font-weight: 400;
-      outline: none;
-      transition: border-color 0.3s ease, background-color 0.3s ease;
-    }
+   
   
     .button {
       height: 40px;

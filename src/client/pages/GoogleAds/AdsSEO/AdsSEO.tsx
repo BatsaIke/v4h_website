@@ -8,7 +8,7 @@ const AdsSEO: React.FC = () => {
     <div className={styles.adsSEO}>
       <div className={styles.heading}>
         Alongside Google Ads, we have developed other digital marketing services
-        that support our Google Ads strategy.
+        that supports our Google Ads strategy.
       </div>
       <div className={styles.servicesContainer}>
         <div className={styles.service}>
