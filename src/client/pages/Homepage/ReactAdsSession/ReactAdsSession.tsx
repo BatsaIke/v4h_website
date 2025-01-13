@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "./ReactAdsSession.module.css";
-import googleads from "../../../assets/images/googleads.jpg";
+import googleads from "../../../assets/google.ads.jpg";
 import googleads2 from "../../../assets/images/googleads2.jpg";
 import arrorup from "../../../assets/images/solar_arrow-right-up-linear.png";
 import checkIcon from "../../../assets/images/prime_check-circle.png";

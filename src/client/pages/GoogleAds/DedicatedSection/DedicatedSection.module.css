@@ -44,7 +44,8 @@
   align-items: center;
   gap: 16px;
   position: relative;
-  top: -390px; /* Adjusted position for your layout */
+  top: -390px;
+  margin-bottom: -200px;
 }
 
 .horizontalBar {
