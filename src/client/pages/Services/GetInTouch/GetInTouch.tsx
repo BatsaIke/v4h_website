@@ -1,7 +1,12 @@
 import React from "react";
 import styles from "./GetInTouch.module.css";
+import { Book_A_Call } from "../../../utils/constants"; // Import the URL constant
 
 const GetInTouch: React.FC = () => {
+  const handleGetInTouch = () => {
+    window.open(Book_A_Call, "_blank"); // Open the booking link in a new tab
+  };
+
   return (
     <div className={styles.container}>
       {/* Main Content */}
@@ -14,7 +19,9 @@ const GetInTouch: React.FC = () => {
             You will receive a transparent offer detailing all maintenance costs and any other essential information before we begin working together.
           </p>
         </div>
-        <button className={styles.getInTouchButton}>Get in touch</button>
+        <button className={styles.getInTouchButton} onClick={handleGetInTouch}>
+          Get in touch
+        </button>
       </div>
 
       {/* Dotted Backgrounds */}
