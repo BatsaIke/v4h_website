@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./OtherPPC.module.css";
 import googleAdsIcon from "../../assets/images/googleadicon.png";
-import metaAdIcon from "../../assets/images/metaAds.png";
+import metaAdIcon from "../../assets/images/metaAdss.png";
 import tiktokAdIcon from "../../assets/images/tiktokAds.png";
 
 const OtherPPC: React.FC = () => {
