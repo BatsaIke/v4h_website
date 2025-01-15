@@ -159,56 +159,57 @@ export const blogArticles = [
       image: blogImage4, 
     },
     
-  {
-    id: "5",
-    title: "Top Strategies for E-commerce Businesses: Small vs. Large Shops",
-    subtitle: "Tailored e-commerce strategies for businesses of all sizes.",
-    date: "28 February 2024",
-    category: "Business",
-    sections: [
-      {
-        title: "Introduction",
-        content:
-          "Whether you have a small shop with fewer than 500 products or a large store with thousands, your e-commerce strategy needs to align with your business size and goals. Here are tailored strategies we’ve used to generate millions in revenue for e-commerce clients with an average ROAS of 9.",
-      },
-      {
-        title: "For Small Shops (Less than 500 Products):",
-        content: `
-  1. PMax Shopping Listing Campaigns  
-     Simple yet highly effective for small product catalogs.  
-  
-  2. Search Campaigns  
-     Use them to gather valuable data about customer intent.  
-  
-  3. **Meta and TikTok Ads**  
-     Drive additional traffic and retarget users through Google Ads.  
-  
-  4. Segmentation  
-     Focus on segmenting product categories to optimize campaigns.`,
-      },
-      {
-        title: "For Large Shops (Thousands of Products):",
-        content: `
-  1. Boost Budgets on PMax Campaigns  
-     Scaling requires a heavy focus on shopping listing campaigns.  
-  
-  2. Segmentation is Essential  
-     Break down products into campaigns based on performance and categories.  
-  
-  3. Create Sales Codes  
-     Promote discounts through separate campaigns to drive urgency.  
-  
-  4. Comprehensive Meta and TikTok Strategies  
-     Invest in a full-funnel approach across multiple platforms.`,
-      },
-      {
-        title: "Conclusion",
-        content:
-          "No matter the size of your store, continuous monitoring and optimization are key to success. These strategies helped us generate over €2.5 million in total revenue for our e-commerce clients. Are you ready to take your business to the next level?",
-      },
-    ],
-    image: blogImage5, // Ensure this image path is correct
-  },
+    {
+      id: "5",
+      title: "Top Strategies for E-commerce Businesses: Small vs. Large Shops",
+      subtitle: "Tailored e-commerce strategies for businesses of all sizes.",
+      date: "28 February 2024",
+      category: "Business",
+      sections: [
+        {
+          title: "Introduction",
+          content:
+            "Whether you have a small shop with fewer than 500 products or a large store with thousands, your e-commerce strategy needs to align with your business size and goals. Here are tailored strategies we’ve used to generate millions in revenue for e-commerce clients with an average ROAS of 9.",
+        },
+        {
+          "title": "For Small Shops (Less than 500 Products):",
+          "content": `
+        1. PMax Shopping Listing Campaigns  
+           Simple yet highly effective for small product catalogs.  
+        
+        2. Search Campaigns  
+           Use them to gather valuable data about customer intent.  
+        
+        3. Meta and TikTok Ads  
+           Drive additional traffic and retarget users through Google Ads.  
+        
+        4. Segmentation  
+           Focus on segmenting product categories to optimize campaigns.
+          `
+        },
+        {
+          title: "For Large Shops (Thousands of Products):",
+          content: `1. Boost Budgets on PMax Campaigns
+    Scaling requires a heavy focus on shopping listing campaigns.
+    
+    2. Segmentation is Essential
+    Break down products into campaigns based on performance and categories.
+    
+    3. Create Sales Codes
+    Promote discounts through separate campaigns to drive urgency.
+    
+    4. Comprehensive Meta and TikTok Strategies
+    Invest in a full-funnel approach across multiple platforms.`,
+        },
+        {
+          title: "Conclusion",
+          content:
+            "No matter the size of your store, continuous monitoring and optimization are key to success. These strategies helped us generate over €2.5 million in total revenue for our e-commerce clients. Are you ready to take your business to the next level?",
+        },
+      ],
+      image: blogImage5, // Ensure this image path is correct
+    },
+    
   
   {
     id: "6",
@@ -240,31 +241,37 @@ export const blogArticles = [
     ],
     image: blogImage6,
   },
-  {
-    id: "7",
-    title: "Google Ads PMax: How We Generated €2.5M with Lead Gen & E-commerce",
-    subtitle: "Insights and strategies for Performance Max campaigns.",
-    date: "10 February 2025",
-    category: "Case Studies",
-    sections: [
-      {
-        title: "Lead Generation Insights",
-        content:
-          "1. Separate Campaigns by Offer: Splitting different offers and lead magnets into dedicated campaigns allowed Google’s algorithm to optimize better and lowered our cost per lead significantly. 2. Pause Underperforming Ads: Regularly reviewing ad performance and reallocating budgets to better-performing ads saved money and improved lead quality. 3. Feed Back Successful Leads: By pushing data from high-converting leads back into Google Ads, we refined our targeting, improving results over time.",
-      },
-      {
-        title: "E-commerce Approaches",
-        content:
-          "1. Highlight Best Sellers: Separating top-performing or high-margin products into dedicated campaigns helped maintain a higher ROAS and prevented budget waste. 2. Phase Out Poor Performers: Regular reviews allowed us to remove non-converting products, keeping campaigns efficient and focused. 3. Use Multiple Formats: Running a mix of videos, images, and carousels gave Google more creative options, boosting engagement and results.",
-      },
-      {
-        title: "ROAS Insights",
-        content:
-          "Our e-commerce campaigns achieved an average ROAS of 9, enabling steady and scalable growth without overcomplicating campaign structures. Small, consistent tweaks made a big difference over time.If you’re running Performance Max campaigns, share what’s working for you—we’re always curious to exchange ideas and learn from others!",
-      },
-    ],
-    image: blogImage7,
-  },
+ {
+  id: "7",
+  title: "Google Ads PMax: How We Generated €2.5M with Lead Gen & E-commerce",
+  subtitle: "Insights and strategies for Performance Max campaigns.",
+  date: "10 February 2025",
+  category: "Case Studies",
+  sections: [
+    {
+      title: "Lead Generation Insights",
+      content:
+        "1. Separate Campaigns by Offer: Splitting different offers and lead magnets into dedicated campaigns allowed Google’s algorithm to optimize better and lowered our cost per lead significantly. " +
+        "2. Pause Underperforming Ads: Regularly reviewing ad performance and reallocating budgets to better-performing ads saved money and improved lead quality. " +
+        "3. Feed Back Successful Leads: By pushing data from high-converting leads back into Google Ads, we refined our targeting, improving results over time.",
+    },
+    {
+      title: "E-commerce Approaches",
+      content:
+        "1. Highlight Best Sellers: Separating top-performing or high-margin products into dedicated campaigns helped maintain a higher ROAS and prevented budget waste. " +
+        "2. Phase Out Poor Performers: Regular reviews allowed us to remove non-converting products, keeping campaigns efficient and focused. " +
+        "3. Use Multiple Formats: Running a mix of videos, images, and carousels gave Google more creative options, boosting engagement and results.",
+    },
+    {
+      title: "ROAS Insights",
+      content:
+        "Our e-commerce campaigns achieved an average ROAS of 9, enabling steady and scalable growth without overcomplicating campaign structures. " +
+        "Small, consistent tweaks made a big difference over time. If you’re running Performance Max campaigns, share what’s working for you—we’re always curious to exchange ideas and learn from others!",
+    },
+  ],
+  image: blogImage7,
+},
+
   {
     id: "8",
     title: "How 47 Ongoing PMax & Search Campaigns Made €500K in 7 Months",

@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import styles from "./ReactAdsSession.module.css";
-import googleads from "../../../assets/google.ads.jpg";
+import googleads from "../../../assets/images/Untitled (11).png";
 import googleads2 from "../../../assets/images/googleads2.jpg";
 import arrorup from "../../../assets/images/solar_arrow-right-up-linear.png";
 import checkIcon from "../../../assets/images/prime_check-circle.png";
-import { Book_A_Call } from "../../../utils/constants"; // Centralized link
 
 const ReactAdsSession: React.FC = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
@@ -25,9 +24,7 @@ const ReactAdsSession: React.FC = () => {
   };
 
   const handleReactAdsClick = () => {
-    if (isMobile) {
-      window.location.href = "/services";
-    }
+    window.location.href = "/services"; // Navigate to /services
   };
 
   return (
@@ -108,7 +105,7 @@ const ReactAdsSession: React.FC = () => {
           </div>
           <div
             className={styles.readMore}
-            onClick={!isMobile ? undefined : handleReactAdsClick}
+            onClick={handleReactAdsClick} // Corrected to navigate to /services
           >
             {isMobile ? (
               <span>Read more</span>

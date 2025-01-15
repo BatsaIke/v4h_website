@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 44px;
+  gap: 24px; /* Reduce gap to avoid too much space */
   box-sizing: border-box;
   padding: 16px;
 }
@@ -17,15 +17,16 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 28px;
+  gap: 16px; /* Reduce gap between title and content */
 }
 
 /* Section Title */
 .sectionTitle {
   color: #292929;
-  font-size: 24px;
+  font-size: 20px;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 600;
+  font-weight: bold; /* Ensure title is bold */
+  margin-bottom: 8px; /* Slight space under the title */
 }
 
 /* Section Content */
@@ -36,6 +37,43 @@
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   line-height: 24px;
+  white-space: pre-line; /* Preserve new lines for proper formatting */
+}
+
+/* Ordered List */
+.orderedList {
+  margin-left: 20px;
+  padding-left: 20px;
+  list-style-type: decimal; /* Ensure proper numbering */
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  line-height: 24px;
+  color: #525252;
+}
+
+.orderedList .listItem {
+  margin-bottom: 4px; /* Reduce space between items */
+}
+
+.bulletedList {
+  margin-left: 20px;
+  padding-left: 20px;
+  list-style-type: disc; /* Ensure proper bulleting */
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  line-height: 24px;
+  color: #525252;
+}
+
+.bulletedList .listItem {
+  margin-bottom: 4px; /* Reduce space between items */
+}
+
+/* Bold Headers within Bulleted or Numbered List */
+.listItem > strong {
+  font-weight: bold;
+  display: block; /* Separate bold headers from their descriptions */
+  margin-bottom: 4px; /* Slight spacing below bold header */
 }
 
 /* Image */
@@ -52,15 +90,21 @@
   .detailsContainer {
     width: 100%; /* Adjust container to fit smaller screens */
     padding: 8px; /* Reduce padding */
-    gap: 24px; /* Reduce gap */
+    gap: 16px; /* Adjust gap */
   }
 
   .sectionTitle {
-    font-size: 20px; /* Adjust font size for titles */
+    font-size: 18px; /* Adjust font size for titles */
   }
 
   .sectionContent {
     font-size: 14px; /* Adjust font size for content */
+    line-height: 22px; /* Adjust line height */
+  }
+
+  .orderedList,
+  .bulletedList {
+    font-size: 14px; /* Smaller font size for lists */
     line-height: 22px; /* Adjust line height */
   }
 
