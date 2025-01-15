@@ -23,14 +23,12 @@ const BlogHeader: React.FC = () => {
         </div>
       </div>
       <div className={styles.imageContainer}>
-        <a href="/blog/top-5-marketing-trends-2024" className={styles.imageLink}>
           <div className={styles.imageOverlay}></div>
           <img src={blogImage} alt="Top Blog" className={styles.blogImage} />
           <div className={styles.imageText}>
-            <h2>Top 5 Tendințe în Marketing Digital pentru 2024</h2>
-            <p>16 February 2024</p>
+            <h2>Here our our top picks for your reading</h2>
+            {/* <p>16 February 2024</p> */}
           </div>
-        </a>
       </div>
     </div>
   );

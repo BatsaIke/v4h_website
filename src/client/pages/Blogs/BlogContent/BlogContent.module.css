@@ -45,36 +45,43 @@
   color: #292929;
   cursor: pointer;
 }
-
-/* Article Grid Styles */
 .articleGrid {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns */
-  gap: 16px; /* Reduced spacing between grid items */
+  grid-template-columns: repeat(2, 1fr); /* Two columns by default */
+  gap: 16px; /* Consistent spacing between articles */
   width: 100%;
-  max-width: 1200px;
+  max-width: 1200px; /* Center the grid and prevent overflow */
+  margin: 0 auto; /* Center align the grid */
+}
+/* Article Text */
+.articleText h3 {
+  font-size: 24px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 600;
+  line-height: 32px;
+  color: #FEFEFE;
+  width: 100%; /* Ensure text spans the container */
+  word-wrap: break-word; /* Break long words */
+  overflow-wrap: break-word;
+  white-space: normal; /* Ensure text wraps properly */
 }
 
-.article {
-  position: relative;
-  border-radius: 20px;
-  overflow: hidden;
+.articleText p {
+  font-size: 14px;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 600;
+  color: #FEFEFE;
+  word-wrap: break-word; /* Ensure text wraps properly */
+  white-space: normal;
 }
 
-/* Fixed height for all images */
+/* Image Container */
 .imageContainer {
   position: relative;
-  height: 360px; /* Same height for all rows */
+  height: 360px; /* Maintain consistent height */
+  width: 100%; /* Ensure full width for all articles */
   border-radius: 20px;
   overflow: hidden;
-}
-
-/* Alternating Widths with Overlap */
-.article:nth-child(4n+1) .imageContainer,
-.article:nth-child(4n+4) .imageContainer {
-  width: calc(150% - 30px); /* Larger width, overlapping */
-  z-index: 1; /* Bring forward */
-  margin-right: -100px; /* Overlap to fill gap */
 }
 
 
@@ -188,8 +195,9 @@
   }
 
   .articleImage {
-    width: 335px;
+    width: 345px;
     height: 251px;
+    display: block;
   }
 
   .loadMore button {

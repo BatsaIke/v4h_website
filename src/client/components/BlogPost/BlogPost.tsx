@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import { blogArticles } from "../../pages/Blogs/BlogData"; // Import blog data
 
 const BlogPost: React.FC = () => {
-  const featuredBlogs = blogArticles.slice(0, 3); // Get the first 3 blogs
+  // Get articles 7, 8, and 9
+  const featuredBlogs = blogArticles.slice(6, 9); 
 
   return (
     <div className={styles.blogPost}>
