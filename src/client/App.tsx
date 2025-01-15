@@ -17,6 +17,7 @@ import LoadingSpinner from "./AdminDashboard/components/UI/loadingSpinner/Loadin
 import { Suspense } from "react";
 import useAuthTokenExpiration from "./AdminDashboard/components/auth/firebase/useAuthTokenExpiratio";
 import { auth } from "./firebase";
+import ScrollToTop from "./utils/ScrollTop";
 /* XXXXXXXXXXXXXXXXXXX */
 
 /* WORDS BEFORE: If you run the SSR server as yarn build and then yarn serve, it will be marked as NODE_ENV=PRODUCTION*/
@@ -38,7 +39,10 @@ export const App = () => {
             <ContextWrapper>
               {/* {getCookieConsent() && <CookieConsent />} */}
               <AppProvider>
+              <ScrollToTop/>
+
                 <Suspense fallback={<LoadingSpinner />}>
+               
                   <Routes>
                     {routes.map((route, index) => {
                       const Layout = route.layout || React.Fragment;
@@ -61,6 +65,7 @@ export const App = () => {
                         </Route>
                       );
                     })}
+                   
                   </Routes>
                 </Suspense>
               </AppProvider>
