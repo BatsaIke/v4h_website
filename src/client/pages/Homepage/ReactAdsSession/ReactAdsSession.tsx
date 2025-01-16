@@ -24,7 +24,7 @@ const ReactAdsSession: React.FC = () => {
   };
 
   const handleReactAdsClick = () => {
-    window.location.href = "/services"; // Navigate to /services
+    window.location.href = "/react-web-development"; // Navigate to /services
   };
 
   return (
@@ -51,7 +51,7 @@ const ReactAdsSession: React.FC = () => {
           </p>
           <div
             className={styles.readMore}
-            onClick={!isMobile ? undefined : handleGoogleAdsClick}
+            onClick={handleGoogleAdsClick}
           >
             {isMobile ? (
               <span>Read more</span>

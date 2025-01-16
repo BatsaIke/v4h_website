@@ -30,7 +30,7 @@ const publicRoutes: RouteType[] = [
   
 
   {
-    path: "/services",
+    path: "/react-web-development",
     layout: PublicLayout,
     component: Services,
   },

@@ -50,7 +50,7 @@ const MobileNav: React.FC = () => {
           <Link to="/google-ads" className={styles.menuItem} onClick={closeMenu}>
             Google Ads
           </Link>
-          <Link to="/services" className={styles.menuItem} onClick={closeMenu}>
+          <Link to="/react-web-development" className={styles.menuItem} onClick={closeMenu}>
             React Web Development
           </Link>
           <Link to="/blogs" className={styles.menuItem} onClick={closeMenu}>

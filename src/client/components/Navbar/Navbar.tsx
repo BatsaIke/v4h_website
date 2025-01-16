@@ -63,9 +63,9 @@ export const NavBar = () => {
               </Link>
               
               <Link
-                to="/services"
+                to="/react-web-development"
                 className={`${styles.navLink} ${
-                  location.pathname === "/services" ? styles.activeNavLink : ""
+                  location.pathname === "/react-web-development" ? styles.activeNavLink : ""
                 }`}
               >
                 React Web Development
